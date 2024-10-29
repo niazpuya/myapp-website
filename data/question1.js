@@ -218,17 +218,19 @@ const questionsByCategory =
                     "Er öffnet eine Remote-Verbindung zum Server.",
                     "Er überwacht die Netzwerkbandbreite."
                 ],
-                correct: ["Er überprüft die IP-Konnektivität mit einem anderen Computer."]
+                correct: ["Er überprüft die IP-Konnektivität mit einem anderen Computer."],
+                explanation: "Der Befehl 'Ping' sendet ICMP-Echoanforderungen an eine Ziel-IP-Adresse und prüft, ob diese erreichbar ist, um Netzwerkverbindungen zu testen."
             },
             {
                 question: "6. Was zeigt der Befehl Tracert an?",
                 answers: [
                     "Eine Liste aller Netzwerkgeräte im lokalen Netzwerk.",
                     "Die Route zu einem Zielcomputer durch eine Reihe von Routern.",
-                    "Die offene Ports auf einem Computer.",
+                    "Die offenen Ports auf einem Computer.",
                     "Die Geschwindigkeit des gesamten Netzwerks."
                 ],
-                correct: ["Die Route zu einem Zielcomputer durch eine Reihe von Routern."]
+                correct: ["Die Route zu einem Zielcomputer durch eine Reihe von Routern."],
+                explanation: "Tracert verfolgt den Pfad von Datenpaketen zu einem Ziel, indem es die Router auflistet, die das Paket durchläuft."
             },
             {
                 question: "7. Wie unterscheidet sich Pathping von Tracert?",
@@ -238,7 +240,8 @@ const questionsByCategory =
                     "Tracert zeigt detaillierte Statistiken für jeden Schritt der Route.",
                     "Pathping ist langsamer als Tracert, liefert aber keine zusätzlichen Informationen."
                 ],
-                correct: ["Pathping zeigt detaillierte Statistiken für jeden Schritt der Route."]
+                correct: ["Pathping zeigt detaillierte Statistiken für jeden Schritt der Route."],
+                explanation: "Pathping kombiniert Funktionen von Ping und Tracert, liefert dabei detaillierte Statistiken zu Paketverlusten auf jedem Hop."
             },
             {
                 question: "8. Welche Informationen können Sie mit dem Befehl Netstat anzeigen?",
@@ -248,7 +251,8 @@ const questionsByCategory =
                     "Die Betriebssystemversion des Computers.",
                     "Die Bandbreite der Netzwerkverbindung."
                 ],
-                correct: ["Netzwerkverbindungen und offene Ports."]
+                correct: ["Netzwerkverbindungen und offene Ports."],
+                explanation: "Netstat zeigt aktive Netzwerkverbindungen und Ports sowie laufende Netzwerkdienste auf einem Computer an."
             },
             {
                 question: "9. Wie können Sie überprüfen, ob ein bestimmter Serverport aktiv ist?",
@@ -258,7 +262,8 @@ const questionsByCategory =
                     "Mit dem Befehl Telnet.",
                     "Mit dem Befehl Route."
                 ],
-                correct: ["Mit dem Befehl Telnet."]
+                correct: ["Mit dem Befehl Telnet."],
+                explanation: "Telnet kann eine Verbindung zu einem spezifischen Server und Port herstellen, um zu prüfen, ob dieser erreichbar ist."
             },
             {
                 question: "10. Wofür wird das Tool Ressourcenmonitor verwendet?",
@@ -268,7 +273,8 @@ const questionsByCategory =
                     "Zum Überprüfen der TCP- oder UDP-Ports.",
                     "Zum Überprüfen von Dateiänderungen."
                 ],
-                correct: ["Zum Überprüfen der TCP- oder UDP-Ports."]
+                correct: ["Zum Überprüfen der TCP- oder UDP-Ports."],
+                explanation: "Der Ressourcenmonitor kann anzeigen, welche Programme auf bestimmte TCP- oder UDP-Ports zugreifen, und bietet Echtzeit-Überwachung."
             },
             {
                 question: "11. Welche Informationen finden Sie in der Ereignisanzeige?",
@@ -278,7 +284,8 @@ const questionsByCategory =
                     "Aufzeichnungen wichtiger Systemereignisse und Fehler.",
                     "Informationen über die IP-Adresse eines Routers."
                 ],
-                correct: ["Aufzeichnungen wichtiger Systemereignisse und Fehler."]
+                correct: ["Aufzeichnungen wichtiger Systemereignisse und Fehler."],
+                explanation: "Die Ereignisanzeige protokolliert Systemereignisse und Fehler, die bei der Diagnose und Fehlerbehebung helfen."
             },
             {
                 question: "12. Welchen Zweck hat das Windows-Netzwerkdiagnosetool?",
@@ -288,7 +295,8 @@ const questionsByCategory =
                     "Es überwacht die Netzwerkkonnektivität zu einem Router.",
                     "Es zeigt eine Liste der installierten Netzwerktreiber."
                 ],
-                correct: ["Es hilft, Netzwerkprobleme zu diagnostizieren und zu beheben."]
+                correct: ["Es hilft, Netzwerkprobleme zu diagnostizieren und zu beheben."],
+                explanation: "Das Windows-Netzwerkdiagnosetool analysiert Netzwerkprobleme und bietet Lösungsvorschläge zur Behebung."
             },
             {
                 question: "13. Welcher Befehl zeigt die aktuelle IP-Konfiguration des Hosts an?",
@@ -298,7 +306,8 @@ const questionsByCategory =
                     "ping",
                     "route"
                 ],
-                correct: ["ipconfig"]
+                correct: ["ipconfig"],
+                explanation: "'ipconfig' zeigt die IP-Adressinformationen eines Hosts, einschließlich Subnetzmasken und Standardgateways."
             },
             {
                 question: "14. Welche PowerShell-Cmdlets können zum Anzeigen der Routingtabelle verwendet werden?",
@@ -308,7 +317,8 @@ const questionsByCategory =
                     "Route-Display",
                     "Netstat"
                 ],
-                correct: ["Get-NetRoute"]
+                correct: ["Get-NetRoute"],
+                explanation: "'Get-NetRoute' zeigt die aktuelle Routingtabelle und die definierten Routen auf dem System."
             },
             {
                 question: "15. Welcher Befehl zeigt die aktuelle IPv4-Konfiguration eines Hosts an?",
@@ -318,7 +328,8 @@ const questionsByCategory =
                     "netstat",
                     "route print"
                 ],
-                correct: ["ipconfig"]
+                correct: ["ipconfig"],
+                explanation: "Mit 'ipconfig' können die aktuellen Netzwerkkonfigurationen, wie IP-Adressen und Subnetzmasken, angezeigt werden."
             },
             {
                 question: "16. Welches Tool kann die Route zu einem Zielcomputer ermitteln?",
@@ -328,7 +339,8 @@ const questionsByCategory =
                     "ipconfig",
                     "telnet"
                 ],
-                correct: ["tracert"]
+                correct: ["tracert"],
+                explanation: "'Tracert' zeigt die Route, die ein Datenpaket zu einem Zielcomputer durch das Netzwerk nimmt."
             },
             {
                 question: "17. Welche Funktion hat der Befehl 'ping'?",
@@ -338,7 +350,8 @@ const questionsByCategory =
                     "Er konfiguriert eine statische IP-Adresse.",
                     "Er verbindet sich mit einem Serverport."
                 ],
-                correct: ["Er testet die Konnektivität zu einem anderen Host."]
+                correct: ["Er testet die Konnektivität zu einem anderen Host."],
+                explanation: "Der Befehl 'ping' sendet ICMP-Anfragen, um die Netzwerkverbindung zu einem anderen Host zu prüfen."
             },
             {
                 question: "18. Mit welchem Tool können Sie Netzwerkverbindungen und Statistiken anzeigen?",
@@ -348,32 +361,33 @@ const questionsByCategory =
                     "tracert",
                     "ipconfig"
                 ],
-                correct: ["netstat"]
+                correct: ["netstat"],
+                explanation: "'Netstat' zeigt aktive Netzwerkverbindungen, Protokolle und Statistiken des aktuellen Netzwerks an."
             },
             {
-                question: "Wie können Sie überprüfen, ob ein bestimmter Port auf einem Server aktiv ist?",
+                question: "19. Wie können Sie überprüfen, ob ein bestimmter Port auf einem Server aktiv ist?",
                 answers: [
                     "Mit dem Befehl 'telnet'.",
                     "Mit dem Befehl 'ping'.",
                     "Mit dem Befehl 'ipconfig'.",
                     "Mit dem Befehl 'netstat'."
                 ],
-                correct: ["Mit dem Befehl 'telnet'."]
+                correct: ["Mit dem Befehl 'telnet'."],
+                explanation: "'Telnet' prüft, ob ein bestimmter Port auf einem Server erreichbar und aktiv ist."
             },
             {
-                question: "19. Welches Windows PowerShell-Cmdlet zeigt die Routingtabelle eines Computers an?",
+                question: "20. Welches Windows PowerShell-Cmdlet zeigt die Routingtabelle eines Computers an?",
                 answers: [
                     "Get-NetRoute",
                     "Get-NetIPInterface",
                     "Test-NetConnection",
                     "Get-NetAdapter"
                 ],
-                correct: ["Get-NetRoute"]
+                correct: ["Get-NetRoute"],
+                explanation: "'Get-NetRoute' zeigt die Routingtabelle eines Computers an, die Informationen über Netzwerkpfade enthält."
             },
-
-            // Fragen zur Verwaltung und Überwachung von Netzwerken
             {
-                question: "Was speichert das Ereignisprotokoll in Windows?",
+                question: "21. Was speichert das Ereignisprotokoll in Windows?",
                 answers:
                 [
                     "Wichtige Systemereignisse und Fehler.",
@@ -381,48 +395,53 @@ const questionsByCategory =
                     "Alle geöffneten Ports.",
                     "Den Netzwerkverkehr."
                 ],
-                correct: ["Wichtige Systemereignisse und Fehler."]
+                correct: ["Wichtige Systemereignisse und Fehler."],
+                explanation: "Das Ereignisprotokoll dokumentiert Systemereignisse und Fehlermeldungen, die für die Fehlerbehebung verwendet werden können."
             },
             {
-                question: "Welches Tool kann Netzwerkprobleme automatisch diagnostizieren und beheben?",
+                question: "22. Welches Tool kann Netzwerkprobleme automatisch diagnostizieren und beheben?",
                 answers: [
                     "Windows-Netzwerkdiagnose",
                     "ipconfig",
                     "tracert",
                     "netstat"
                 ],
-                correct: ["Windows-Netzwerkdiagnose"]
+                correct: ["Windows-Netzwerkdiagnose"],
+                explanation: "Die Windows-Netzwerkdiagnose analysiert Netzwerkeinstellungen und hilft, Probleme automatisch zu erkennen und zu beheben."
             },
             {
-                question: "Welche IPv4-Einstellung weist auf eine fehlende Verbindung zu einem DHCP-Server hin?",
+                question: "23. Welche IPv4-Einstellung weist auf eine fehlende Verbindung zu einem DHCP-Server hin?",
                 answers: [
                     "Eine APIPA-Adresse (169.254.x.x)",
                     "Eine Adresse der Klasse B",
                     "Eine Adresse der Klasse C",
                     "Eine öffentliche IP-Adresse"
                 ],
-                correct: ["Eine APIPA-Adresse (169.254.x.x)"]
+                correct: ["Eine APIPA-Adresse (169.254.x.x)"],
+                explanation: "Eine APIPA-Adresse weist darauf hin, dass der Host keine IP-Adresse vom DHCP-Server erhalten konnte."
             },
             {
-                question: "Welches Cmdlet verwendet Windows PowerShell für die Überprüfung der Netzwerkkonnektivität?",
+                question: "24. Welches Cmdlet verwendet Windows PowerShell für die Überprüfung der Netzwerkkonnektivität?",
                 answers: [
                     "Test-Connection",
                     "Get-NetAdapter",
                     "Set-NetIPAddress",
                     "ipconfig"
                 ],
-                correct: ["Test-Connection"]
+                correct: ["Test-Connection"],
+                explanation: "'Test-Connection' sendet Ping-Anfragen, um die Netzwerkkonnektivität zu einem Ziel zu testen."
             },
             {
-                question: "Welches Cmdlet aktualisiert die Netzwerkkonfiguration auf einem Windows-Computer?",
+                question: "25. Welches Cmdlet aktualisiert die Netzwerkkonfiguration auf einem Windows-Computer?",
                 answers: [
                     "Restart-NetAdapter",
                     "Get-NetIPAddress",
                     "Set-DnsClient",
                     "Get-NetRoute"
                 ],
-                correct: ["Restart-NetAdapter"]
-            },
+                correct: ["Restart-NetAdapter"],
+                explanation: "'Restart-NetAdapter' wird verwendet, um die Netzwerkkonfiguration neu zu laden und Adapterprobleme zu beheben."
+            }
 
         ],
     OSI:
@@ -1088,7 +1107,7 @@ const questionsByCategory =
                 explanation: "Ein Switch verwendet MAC-Adressen zur Weiterleitung auf Layer 2, während ein Router auf Layer 3 anhand von IP-Adressen arbeitet."
             },
             {
-                question: "1. Welche Hauptaufgabe hat ein Hub in einem Ethernet-Netzwerk?",
+                question: "61. Welche Hauptaufgabe hat ein Hub in einem Ethernet-Netzwerk?",
                 answers: [
                     "Er trennt Kollisionsdomänen",
                     "Er verstärkt das Signal und verteilt es an alle angeschlossenen Geräte",
@@ -1099,7 +1118,7 @@ const questionsByCategory =
                 explanation: "Ein Hub arbeitet als Signalverstärker und verteilt eingehende Signale an alle angeschlossenen Geräte, ohne sie zu filtern."
             },
             {
-                question: "2. Welche Funktion hat ein Uplink-Port bei einem Hub?",
+                question: "62. Welche Funktion hat ein Uplink-Port bei einem Hub?",
                 answers: [
                     "Er dient zur Verbindung mehrerer Hubs",
                     "Er erhöht die Übertragungsrate",
@@ -1110,7 +1129,7 @@ const questionsByCategory =
                 explanation: "Ein Uplink-Port ermöglicht das Kaskadieren mehrerer Hubs, wodurch sie verbunden und die Reichweite erweitert werden kann."
             },
             {
-                question: "3. Was ist die Hauptaufgabe einer Bridge im Netzwerk?",
+                question: "63. Was ist die Hauptaufgabe einer Bridge im Netzwerk?",
                 answers: [
                     "Sie verbindet verschiedene IP-Subnetze",
                     "Sie trennt physikalisch zwei Ethernet-LANs und verhindert Kollisionen",
@@ -1121,7 +1140,7 @@ const questionsByCategory =
                 explanation: "Eine Bridge trennt physikalisch zwei LANs und isoliert Kollisionen und fehlerhafte Pakete zwischen den Netzwerken."
             },
             {
-                question: "4. Was ist der Spanning Tree Algorithmus?",
+                question: "64. Was ist der Spanning Tree Algorithmus?",
                 answers: [
                     "Ein Algorithmus zur Optimierung der Routingtabellen",
                     "Ein Algorithmus zur Vermeidung von Schleifen in Netzwerk-Topologien",
@@ -1132,7 +1151,7 @@ const questionsByCategory =
                 explanation: "Der Spanning Tree Algorithmus verhindert Schleifen, indem er redundante Pfade im Netzwerk eliminiert und eine baumartige Struktur erstellt."
             },
             {
-                question: "5. Welche Daten werden von Bridges zur Kommunikation verwendet?",
+                question: "65. Welche Daten werden von Bridges zur Kommunikation verwendet?",
                 answers: [
                     "Bridge Information Units (BIUs)",
                     "Bridge Protocol Data Units (BPDUs)",
@@ -1143,7 +1162,7 @@ const questionsByCategory =
                 explanation: "Bridges nutzen BPDUs, um sich gegenseitig zu erkennen und den Spanning Tree Algorithmus zu koordinieren."
             },
             {
-                question: "6. Welche Bedeutung hat die Root-Bridge in einem Netzwerk?",
+                question: "66. Welche Bedeutung hat die Root-Bridge in einem Netzwerk?",
                 answers: [
                     "Sie stellt den Ausgangspunkt für den Datenverkehr dar",
                     "Sie sorgt für die Trennung aller Broadcast-Domänen",
@@ -1154,7 +1173,7 @@ const questionsByCategory =
                 explanation: "Die Root-Bridge ist die zentrale Referenz, von der aus der Spanning Tree Algorithmus die besten Pfade berechnet."
             },
             {
-                question: "7. Worin besteht der Vorteil eines Switches gegenüber einer Bridge?",
+                question: "67. Worin besteht der Vorteil eines Switches gegenüber einer Bridge?",
                 answers: [
                     "Switches verbinden nur zwei Netzwerksegmente",
                     "Switches bieten dedizierte Verbindungen und verteilen die Bandbreite auf Netzsegmente",
@@ -1165,7 +1184,7 @@ const questionsByCategory =
                 explanation: "Switches verteilen die Bandbreite effizienter und bieten dedizierte Verbindungen zwischen Ports, was die Netzwerkleistung erhöht."
             },
             {
-                question: "8. Was bedeutet 'Cut-Through' im Zusammenhang mit Switches?",
+                question: "68. Was bedeutet 'Cut-Through' im Zusammenhang mit Switches?",
                 answers: [
                     "Pakete werden direkt weitergeleitet, nachdem die Ziel-MAC-Adresse gelesen wurde",
                     "Pakete werden zwischengespeichert und auf Fehler geprüft",
@@ -1176,7 +1195,7 @@ const questionsByCategory =
                 explanation: "Bei Cut-Through wird das Paket direkt nach dem Lesen der Ziel-MAC-Adresse weitergeleitet, was zu geringeren Verzögerungen führt."
             },
             {
-                question: "9. Wann ist Store-and-Forward-Switching vorteilhaft?",
+                question: "69. Wann ist Store-and-Forward-Switching vorteilhaft?",
                 answers: [
                     "In Netzwerken mit hoher Fehlerrate",
                     "In Netzwerken ohne Broadcasts",
@@ -1187,7 +1206,7 @@ const questionsByCategory =
                 explanation: "Store-and-Forward-Switching überprüft das gesamte Paket auf Fehler, was bei hoher Fehlerrate die Netzwerkleistung verbessern kann."
             },
             {
-                question: "10. Was ist das Layer-3-Switching?",
+                question: "70. Was ist das Layer-3-Switching?",
                 answers: [
                     "Ein Ansatz, der ausschließlich auf MAC-Adressen basiert",
                     "Eine Kombination aus Layer-2-Switching und Layer-3-Routing",
@@ -1198,7 +1217,7 @@ const questionsByCategory =
                 explanation: "Layer-3-Switching kombiniert schnelles Layer-2-Switching mit der Routing-Funktionalität von Layer 3, was besonders in IP-Netzen vorteilhaft ist."
             },
             {
-                question: "11. Wie funktioniert ein Layer-3-Switch bei der Weiterleitung von IP-Paketen?",
+                question: "71. Wie funktioniert ein Layer-3-Switch bei der Weiterleitung von IP-Paketen?",
                 answers: [
                     "Er liest nur die Ziel-MAC-Adresse",
                     "Er analysiert das erste IP-Paket und leitet die folgenden basierend auf MAC-Adressen weiter",
@@ -1209,7 +1228,7 @@ const questionsByCategory =
                 explanation: "Ein Layer-3-Switch analysiert das erste IP-Paket zwischen zwei Stationen und kann danach die Kommunikation auf Basis der MAC-Adresse fortsetzen."
             },
             {
-                question: "12. Was passiert bei einer hohen Anzahl an CRC-Fehlern in einem Switch?",
+                question: "72. Was passiert bei einer hohen Anzahl an CRC-Fehlern in einem Switch?",
                 answers: [
                     "Der Switch schaltet automatisch von Cut-Through auf Store-and-Forward um",
                     "Der Switch schaltet automatisch ab",
@@ -1220,7 +1239,7 @@ const questionsByCategory =
                 explanation: "Um Netzwerkprobleme zu vermeiden, schaltet der Switch bei hoher Fehleranzahl von Cut-Through auf Store-and-Forward um."
             },
             {
-                question: "13. Wie kann die Kaskadierung von Switches die Netzwerkleistung verbessern?",
+                question: "73. Wie kann die Kaskadierung von Switches die Netzwerkleistung verbessern?",
                 answers: [
                     "Sie reduziert die Anzahl der Routingtabellen",
                     "Sie entlastet Netzsegmente und verteilt den Datenverkehr",
@@ -1231,7 +1250,7 @@ const questionsByCategory =
                 explanation: "Die Kaskadierung von Switches erlaubt es, den Datenverkehr besser zu verteilen und Netzsegmente zu entlasten."
             },
             {
-                question: "14. Worin liegt ein Nachteil des Cut-Through-Switchings?",
+                question: "74. Worin liegt ein Nachteil des Cut-Through-Switchings?",
                 answers: [
                     "Es speichert keine Datenpakete",
                     "Fehlerhafte Pakete können das Ziel erreichen",
@@ -1242,7 +1261,7 @@ const questionsByCategory =
                 explanation: "Da beim Cut-Through-Switching Pakete sofort weitergeleitet werden, erreichen möglicherweise auch fehlerhafte Pakete das Ziel."
             },
             {
-                question: "15. Wann ist ein Wechsel von Cut-Through zu Store-and-Forward-Switching sinnvoll?",
+                question: "75. Wann ist ein Wechsel von Cut-Through zu Store-and-Forward-Switching sinnvoll?",
                 answers: [
                     "Bei einer niedrigen Netzwerkbelastung",
                     "Bei einer erhöhten Anzahl an Netzwerkfehlern",
@@ -1461,7 +1480,7 @@ const questionsByCategory =
     SwitchingAlgebra:
         [
             {
-                question: "21. Was ist positive Logik?",
+                question: "1. Was ist positive Logik?",
                 answers: [
                     "Logische 0 entspricht dem Pegel H und logische 1 dem Pegel L",
                     "Logische 0 entspricht dem Pegel L und logische 1 dem Pegel H",
@@ -1472,7 +1491,7 @@ const questionsByCategory =
                 explanation: "Bei positiver Logik entspricht logische 0 dem Pegel L (0 V) und logische 1 dem Pegel H (+5 V)."
             },
             {
-                question: "22. Was ist negative Logik?",
+                question: "2. Was ist negative Logik?",
                 answers: [
                     "Logische 0 entspricht dem Pegel L und logische 1 dem Pegel H",
                     "Logische 0 entspricht dem Pegel H und logische 1 dem Pegel L",
@@ -1483,7 +1502,7 @@ const questionsByCategory =
                 explanation: "Bei negativer Logik entspricht logische 0 dem Pegel H (+5 V) und logische 1 dem Pegel L (0 V)."
             },
             {
-                question: "23. Wann ist das Ergebnis eines UND-Gatters 1?",
+                question: "3. Wann ist das Ergebnis eines UND-Gatters 1?",
                 answers: [
                     "Wenn alle Eingänge 0 sind",
                     "Wenn ein Eingang 1 und der andere 0 ist",
@@ -1494,7 +1513,7 @@ const questionsByCategory =
                 explanation: "Das UND-Gatter liefert nur dann den Wert 1, wenn alle Eingänge auf 1 gesetzt sind."
             },
             {
-                question: "24. Wann ist das Ergebnis eines ODER-Gatters 1?",
+                question: "4. Wann ist das Ergebnis eines ODER-Gatters 1?",
                 answers: [
                     "Wenn beide Eingänge 0 sind",
                     "Wenn mindestens ein Eingang 1 ist",
@@ -1505,7 +1524,7 @@ const questionsByCategory =
                 explanation: "Das ODER-Gatter gibt 1 aus, wenn mindestens einer der Eingänge auf 1 gesetzt ist."
             },
             {
-                question: "25. Wofür wird das XOR-Gatter verwendet?",
+                question: "5. Wofür wird das XOR-Gatter verwendet?",
                 answers: [
                     "Um immer eine 1 auszugeben",
                     "Um Doppelnamen wie Meier Schmitt auszuschließen",
@@ -1516,7 +1535,7 @@ const questionsByCategory =
                 explanation: "Das XOR-Gatter (Entweder-Oder) wird verwendet, wenn man entweder den einen oder den anderen Wert, aber nicht beide zusammen, als Ergebnis haben möchte."
             },
             {
-                question: "26. Was passiert bei einer NOT-Verknüpfung, wenn der Eingang 1 ist?",
+                question: "6. Was passiert bei einer NOT-Verknüpfung, wenn der Eingang 1 ist?",
                 answers: [
                     "Der Ausgang bleibt 1",
                     "Der Ausgang wechselt auf 0",
@@ -1527,7 +1546,7 @@ const questionsByCategory =
                 explanation: "Ein NOT-Gatter invertiert den Eingang, d.h., wenn der Eingang 1 ist, wird der Ausgang 0."
             },
             {
-                question: "27. Was ist ein NAND-Gatter?",
+                question: "7. Was ist ein NAND-Gatter?",
                 answers: [
                     "Ein Gatter, das nur bei beiden Eingängen 1 ausgibt",
                     "Ein Gatter, das das Ergebnis eines UND-Gatters negiert",
@@ -1538,7 +1557,7 @@ const questionsByCategory =
                 explanation: "Das NAND-Gatter gibt 0 aus, wenn beide Eingänge 1 sind, da es die Ausgabe eines UND-Gatters negiert."
             },
             {
-                question: "28. Was beschreibt das Absorptionsgesetz in der Schaltalgebra?",
+                question: "8. Was beschreibt das Absorptionsgesetz in der Schaltalgebra?",
                 answers: [
                     "A ∨ (A ∧ B) = A",
                     "A ∧ B = A ∨ B",
@@ -1549,7 +1568,7 @@ const questionsByCategory =
                 explanation: "Das Absorptionsgesetz zeigt, wie überflüssige Terme in logischen Ausdrücken entfernt werden können. A ∨ (A ∧ B) vereinfacht sich zu A."
             },
             {
-                question: "29. Was beschreibt das Negationsgesetz in der Schaltalgebra?",
+                question: "9. Was beschreibt das Negationsgesetz in der Schaltalgebra?",
                 answers: [
                     "A ∨ ¬A = 1 und A ∧ ¬A = 0",
                     "¬A ∨ ¬B = A ∧ B",
@@ -1560,7 +1579,7 @@ const questionsByCategory =
                 explanation: "Das Negationsgesetz besagt, dass eine Variable oder ihr Gegenteil immer wahr ist (A ∨ ¬A = 1) und eine Variable und ihr Gegenteil gleichzeitig falsch sind (A ∧ ¬A = 0)."
             },
             {
-                question: "30. Was zeigt das Ergebnis einer Modulo-Operation an?",
+                question: "0. Was zeigt das Ergebnis einer Modulo-Operation an?",
                 answers: [
                     "Das Produkt der Division",
                     "Den Rest der Division",
@@ -1571,7 +1590,7 @@ const questionsByCategory =
                 explanation: "Eine Modulo-Operation liefert den Rest der Division. Beispiel: 9 ÷ 2 = 4 Rest 1, daher ist das Ergebnis 1."
             },
             {
-                question: "31. Was besagt das Kommutativgesetz in der Schaltalgebra?",
+                question: "11. Was besagt das Kommutativgesetz in der Schaltalgebra?",
                 answers: [
                     "A ∧ B = B ∧ A und A ∨ B = B ∨ A",
                     "A ∧ (A ∨ B) = A",
@@ -1582,7 +1601,7 @@ const questionsByCategory =
                 explanation: "Das Kommutativgesetz besagt, dass bei logischen UND- und ODER-Verknüpfungen die Reihenfolge der Operanden keinen Einfluss auf das Ergebnis hat."
             },
             {
-                question: "32. Was ist der Hauptunterschied zwischen Cut-Through- und Store-and-Forward-Switching?",
+                question: "12. Was ist der Hauptunterschied zwischen Cut-Through- und Store-and-Forward-Switching?",
                 answers: [
                     "Cut-Through prüft das gesamte Paket auf Fehler, bevor es weitergeleitet wird.",
                     "Store-and-Forward minimiert die Latenz durch sofortige Weiterleitung.",
@@ -1593,7 +1612,7 @@ const questionsByCategory =
                 explanation: "Beim Cut-Through-Switching werden Pakete sofort nach Empfang der Zieladresse weitergeleitet, was die Latenz verringert."
             },
             {
-                question: "33. Was besagt das Kommutativgesetz in der Schaltalgebra?",
+                question: "13. Was besagt das Kommutativgesetz in der Schaltalgebra?",
                 answers: [
                     "A ∧ B = B ∧ A und A ∨ B = B ∨ A",
                     "A ∧ (A ∨ B) = A",
@@ -1604,7 +1623,7 @@ const questionsByCategory =
                 explanation: "Das Kommutativgesetz besagt, dass bei logischen UND- und ODER-Verknüpfungen die Reihenfolge der Operanden keinen Einfluss auf das Ergebnis hat."
             },
             {
-                question: "34. Was ist eine Konjunktive Normalform (KNF) in der Schaltalgebra?",
+                question: "14. Was ist eine Konjunktive Normalform (KNF) in der Schaltalgebra?",
                 answers: [
                     "Eine Disjunktion von Konjunktionen",
                     "Eine Konjunktion von Disjunktionen",
@@ -1615,7 +1634,7 @@ const questionsByCategory =
                 explanation: "Eine Formel ist in Konjunktiver Normalform (KNF), wenn sie eine Konjunktion (UND) von Disjunktionen (ODER) ist."
             },
             {
-                question: "35. Was beschreibt das Assoziativgesetz in der Schaltalgebra?",
+                question: "15. Was beschreibt das Assoziativgesetz in der Schaltalgebra?",
                 answers: [
                     "Die Reihenfolge der Verknüpfungen kann ohne Einfluss auf das Ergebnis geändert werden.",
                     "Das Ergebnis ist nur wahr, wenn alle Operanden wahr sind.",
@@ -1626,7 +1645,7 @@ const questionsByCategory =
                 explanation: "Das Assoziativgesetz besagt, dass bei UND- und ODER-Verknüpfungen die Reihenfolge der Operanden keinen Einfluss auf das Ergebnis hat."
             },
             {
-                question: "36. Welches Gesetz der Schaltalgebra beschreibt ¬(A ∧ B) = ¬A ∨ ¬B?",
+                question: "16. Welches Gesetz der Schaltalgebra beschreibt ¬(A ∧ B) = ¬A ∨ ¬B?",
                 answers: [
                     "De Morgansches Gesetz",
                     "Absorptionsgesetz",
@@ -1637,7 +1656,7 @@ const questionsByCategory =
                 explanation: "De Morgansches Gesetz beschreibt, wie Negationen von UND- und ODER-Verknüpfungen umgekehrt werden."
             },
             {
-                question: "37. Was zeigt der Modulo-Operator?",
+                question: "17. Was zeigt der Modulo-Operator?",
                 answers: [
                     "Den Rest einer Division",
                     "Das Produkt einer Division",
@@ -1648,7 +1667,7 @@ const questionsByCategory =
                 explanation: "Der Modulo-Operator liefert den Rest einer Division, z.B. 9 ÷ 2 = 4 Rest 1, daher ist das Ergebnis 1."
             },
             {
-                question: "38. Was zeigt der Modulo-Operator in einer Division an?",
+                question: "18. Was zeigt der Modulo-Operator in einer Division an?",
                 answers: [
                     "Den Rest der Division",
                     "Das Ergebnis der Division",
@@ -1659,7 +1678,7 @@ const questionsByCategory =
                 explanation: "Der Modulo-Operator zeigt den Rest einer Division an. Zum Beispiel, 9 ÷ 2 = 4 Rest 1, daher ist das Ergebnis 1."
             },
             {
-                question: "39. Was beschreibt das De Morgansche Gesetz in der Schaltalgebra?",
+                question: "19. Was beschreibt das De Morgansche Gesetz in der Schaltalgebra?",
                 answers:
                     [
                         "¬(A ∧ B) = ¬A ∨ ¬B",
@@ -1671,7 +1690,7 @@ const questionsByCategory =
                 explanation: "Das De Morgansche Gesetz beschreibt die Umkehrung der Verknüpfungen UND und ODER durch Negationen."
             },
             {
-                question: "40. Was besagt das Absorptionsgesetz in der Schaltalgebra?",
+                question: "20. Was besagt das Absorptionsgesetz in der Schaltalgebra?",
                 answers:
                     [
                         "A ∨ (A ∧ B) = A",
@@ -1683,7 +1702,7 @@ const questionsByCategory =
                 explanation: "Das Absorptionsgesetz vereinfacht logische Ausdrücke, indem überflüssige Terme entfernt werden."
             },
             {
-                question: "41. Was beschreibt das Kommutativgesetz in der Schaltalgebra?",
+                question: "21. Was beschreibt das Kommutativgesetz in der Schaltalgebra?",
                 answers:
                     [
                         "A ∧ B = B ∧ A",
@@ -1695,7 +1714,7 @@ const questionsByCategory =
                 explanation: "Das Kommutativgesetz besagt, dass die Reihenfolge der Variablen bei UND- und ODER-Verknüpfungen keinen Einfluss auf das Ergebnis hat."
             },
             {
-                question: "42. Was zeigt die Modulo-Operation an?",
+                question: "22. Was zeigt die Modulo-Operation an?",
                 answers: [
                     "Den Rest einer Division.",
                     "Den Quotienten einer Division.",
@@ -1713,124 +1732,136 @@ const questionsByCategory =
                 
             },
             {
-                question: "43. Was beschreibt die logische Funktion XOR?",
+                question: "23. Was beschreibt die logische Funktion XOR?",
                 answers: [
                     "Eine Funktion, die die Summe zweier Zahlen berechnet.",
                     "Eine Funktion, die 1 ergibt, wenn die Anzahl der 1en ungerade ist.",
                     "Eine Funktion, die das Produkt zweier Zahlen berechnet.",
                     "Eine Funktion, die immer 0 ergibt."
                 ],
-                correct: ["Eine Funktion, die 1 ergibt, wenn die Anzahl der 1en ungerade ist."]
+                correct: ["Eine Funktion, die 1 ergibt, wenn die Anzahl der 1en ungerade ist."],
+                explanation: "Die XOR-Funktion gibt nur dann 1 aus, wenn die Anzahl der Einsen in den Eingaben ungerade ist, andernfalls gibt sie 0 aus."
             },
             {
-                question: "44. Welcher Wert wird beim XOR-Operator für 1+1 ausgegeben?",
+                question: "24. Welcher Wert wird beim XOR-Operator für 1+1 ausgegeben?",
                 answers: [
                     "1",
                     "0",
                     "2",
                     "Unendlich"
                 ],
-                correct: ["0"]
+                correct: ["0"],
+                explanation: "Bei der XOR-Operation ergibt die Eingabe 1 XOR 1 das Ergebnis 0, da die Anzahl der Einsen gerade ist."
             },
             {
-                question: "45. Welche Konstanten kennt die Schaltalgebra?",
+                question: "25. Welche Konstanten kennt die Schaltalgebra?",
                 answers: [
                     "Die Werte -1 und 1",
                     "Die Werte 0 und 1",
                     "Alle positiven Zahlen",
                     "Alle negativen Zahlen"
                 ],
-                correct: ["Die Werte 0 und 1"]
+                correct: ["Die Werte 0 und 1"],
+                explanation: "In der Schaltalgebra gibt es nur die beiden Zustände 0 (falsch) und 1 (wahr), was dem binären System entspricht."
             },
             {
-                question: "46. In der Schaltalgebra können Variablen welche Werte annehmen?",
+                question: "26. In der Schaltalgebra können Variablen welche Werte annehmen?",
                 answers: [
                     "Nur 0 und 1",
                     "Jede beliebige Zahl",
                     "Nur positive Zahlen",
                     "Nur negative Zahlen"
                 ],
-                correct: ["Nur 0 und 1"]
+                correct: ["Nur 0 und 1"],
+                explanation: "Variablen in der Schaltalgebra sind binär und können daher nur die Werte 0 und 1 annehmen."
             },
             {
-                question: "47. Wann sind Klammern in der Schaltalgebra erforderlich?",
+                question: "27. Wann sind Klammern in der Schaltalgebra erforderlich?",
                 answers: [
                     "Bei der NOR-Verknüpfung",
                     "Bei der UND-Verknüpfung",
                     "Bei der ODER-Verknüpfung",
                     "Bei der XOR-Verknüpfung"
                 ],
-                correct: ["Bei der ODER-Verknüpfung"]
+                correct: ["Bei der ODER-Verknüpfung"],
+                explanation: "Klammern sind in der Schaltalgebra bei der ODER-Verknüpfung erforderlich, um den Vorrang der UND-Verknüpfung korrekt darzustellen."
             },
             {
-                question: "48. Welche Verknüpfungen haben in der Schaltalgebra Vorrang?",
+                question: "28. Welche Verknüpfungen haben in der Schaltalgebra Vorrang?",
                 answers: [
                     "ODER-Verknüpfungen vor UND-Verknüpfungen",
                     "UND-Verknüpfungen vor ODER-Verknüpfungen",
                     "NOR-Verknüpfungen vor XOR-Verknüpfungen",
                     "XOR-Verknüpfungen vor NOR-Verknüpfungen"
                 ],
-                correct: ["UND-Verknüpfungen vor ODER-Verknüpfungen"]
+                correct: ["UND-Verknüpfungen vor ODER-Verknüpfungen"],
+                explanation: "In der Schaltalgebra haben UND-Verknüpfungen Vorrang vor ODER-Verknüpfungen, ähnlich wie in der klassischen Algebra Multiplikation Vorrang vor Addition hat."
             },
             {
-                question: "49. Welches Ergebnis liefert die Modulo-Operation?",
+                question: "29. Welches Ergebnis liefert die Modulo-Operation?",
                 answers: [
                     "Den Rest einer Division.",
                     "Den Quotienten einer Division.",
                     "Das Produkt zweier Zahlen.",
                     "Die Anzahl der Bits in einer Zahl."
                 ],
-                correct: ["Den Rest einer Division."]
+                correct: ["Den Rest einer Division."],
+                explanation: "Die Modulo-Operation berechnet den Rest einer Division. Beispielsweise ist das Ergebnis von 9 mod 2 gleich 1."
             },
             {
-                question: "50. Was beschreibt die logische Funktion XOR?",
+                question: "30. Was beschreibt die logische Funktion XOR?",
                 answers: [
                     "Eine Funktion, die die Summe zweier Zahlen berechnet.",
                     "Eine Funktion, die 1 ergibt, wenn die Anzahl der 1en ungerade ist.",
                     "Eine Funktion, die das Produkt zweier Zahlen berechnet.",
                     "Eine Funktion, die immer 0 ergibt."
                 ],
-                correct: ["Eine Funktion, die 1 ergibt, wenn die Anzahl der 1en ungerade ist."]
+                correct: ["Eine Funktion, die 1 ergibt, wenn die Anzahl der 1en ungerade ist."],
+                explanation: "Die XOR-Funktion gibt 1 aus, wenn die Eingabebits eine ungerade Anzahl an Einsen haben."
             },
             {
-                question: "51. Welcher Wert wird beim XOR-Operator für 1+1 ausgegeben?",
+                question: "31. Welcher Wert wird beim XOR-Operator für 1+1 ausgegeben?",
                 answers: [
                     "1",
                     "0",
                     "2",
                     "Unendlich"
                 ],
-                correct: ["0"]
+                correct: ["0"],
+                explanation: "Da 1 XOR 1 das Ergebnis 0 liefert, zeigt dies, dass die XOR-Operation eine gerade Anzahl von Einsen in den Eingaben erkennt."
             },
             {
-                question: "52. Welche Konstanten kennt die Schaltalgebra?",
+                question: "32. Welche Konstanten kennt die Schaltalgebra?",
                 answers: [
                     "Die Werte -1 und 1",
                     "Die Werte 0 und 1",
                     "Alle positiven Zahlen",
                     "Alle negativen Zahlen"
                 ],
-                correct: ["Die Werte 0 und 1"]
+                correct: ["Die Werte 0 und 1"],
+                explanation: "In der Schaltalgebra repräsentieren die Werte 0 und 1 die einzigen Zustände, die eine logische Aussage annehmen kann: falsch und wahr."
             },
             {
-                question: "53. Wann sind Klammern in der Schaltalgebra erforderlich?",
+                question: "33. Wann sind Klammern in der Schaltalgebra erforderlich?",
                 answers: [
                     "Bei der NOR-Verknüpfung",
                     "Bei der UND-Verknüpfung",
                     "Bei der ODER-Verknüpfung",
                     "Bei der XOR-Verknüpfung"
                 ],
-                correct: ["Bei der ODER-Verknüpfung"]
+                correct: ["Bei der ODER-Verknüpfung"],
+                explanation: "Um die Reihenfolge der logischen Operationen zu verdeutlichen, sind Klammern bei der ODER-Verknüpfung erforderlich, wenn UND ebenfalls verwendet wird."
             },
             {
-                question: "54. Welche Verknüpfungen haben in der Schaltalgebra Vorrang?",
+                question: "34. Welche Verknüpfungen haben in der Schaltalgebra Vorrang?",
                 answers: [
                     "ODER-Verknüpfungen vor UND-Verknüpfungen",
                     "UND-Verknüpfungen vor ODER-Verknüpfungen",
                     "NOR-Verknüpfungen vor XOR-Verknüpfungen",
                     "XOR-Verknüpfungen vor NOR-Verknüpfungen"
                 ],
-                correct: ["UND-Verknüpfungen vor ODER-Verknüpfungen"]
+                correct: ["UND-Verknüpfungen vor ODER-Verknüpfungen"],
+                explanation: "In der Reihenfolge der Auswertung in der Schaltalgebra haben UND-Verknüpfungen stets Vorrang vor ODER-Verknüpfungen."
             },
         
        
@@ -2458,354 +2489,719 @@ const questionsByCategory =
             explanation: "IPv4-Routen können mit dem Befehl 'route add' oder PowerShell-Cmdlets wie Get-NetRoute verwaltet werden."
         },
         {
-            question: "Was stellt die Netzwerk-ID in einer IPv4-Adresse dar?",
+            question: "37. Was stellt die Netzwerk-ID in einer IPv4-Adresse dar?",
             answers: [
                 "Den individuellen Host im Netzwerk.",
                 "Das Netzwerk, zu dem der Host gehört.",
                 "Die Subnetzmaske des Hosts.",
                 "Die öffentliche IP-Adresse des Hosts."
             ],
-            correct: ["Das Netzwerk, zu dem der Host gehört."]
+            correct: ["Das Netzwerk, zu dem der Host gehört."],
+            explanation: "Die Netzwerk-ID gibt an, zu welchem Netzwerk ein Host gehört und hilft, den Netzwerkanteil einer IPv4-Adresse zu identifizieren."
         },
         {
-            question: "Welche Schreibweise wird für IPv4-Adressen im Dezimalsystem verwendet?",
+            question: "38. Welche Schreibweise wird für IPv4-Adressen im Dezimalsystem verwendet?",
             answers: [
                 "Hexadezimal.",
                 "Punktierte Dezimalschreibweise.",
                 "Binäre Schreibweise.",
                 "Dezimalstellen ohne Punkte."
             ],
-            correct: ["Punktierte Dezimalschreibweise."]
+            correct: ["Punktierte Dezimalschreibweise."],
+            explanation: "IPv4-Adressen werden üblicherweise in der punktierten Dezimalschreibweise dargestellt, um die Lesbarkeit zu verbessern, z.B. 192.168.1.1."
         },
         {
-            question: "Was zeigt eine APIPA-Adresse an?",
+            question: "39. Was zeigt eine APIPA-Adresse an?",
             answers: [
                 "Der Host hat keine IP-Adresse vom DHCP erhalten.",
                 "Der Host ist mit dem Internet verbunden.",
                 "Der Host hat eine statische IP-Adresse.",
                 "Der Host verwendet eine IPv6-Adresse."
             ],
-            correct: ["Der Host hat keine IP-Adresse vom DHCP erhalten."]
+            correct: ["Der Host hat keine IP-Adresse vom DHCP erhalten."],
+            explanation: "Eine APIPA-Adresse (169.254.x.x) wird zugewiesen, wenn ein Host keine IP-Adresse von einem DHCP-Server erhalten konnte."
         },
         {
-            question: "Was bedeutet Supernetting bei IPv4?",
+            question: "40. Was bedeutet Supernetting bei IPv4?",
             answers: [
                 "Das Zusammenfassen mehrerer kleiner Netze zu einem größeren Netzwerk.",
                 "Das Aufteilen eines großen Netzwerks in kleinere Netzwerke.",
                 "Das Verwenden von privaten IP-Adressen im Internet.",
                 "Die Verwendung von APIPA-Adressen."
             ],
-            correct: ["Das Zusammenfassen mehrerer kleiner Netze zu einem größeren Netzwerk."]
+            correct: ["Das Zusammenfassen mehrerer kleiner Netze zu einem größeren Netzwerk."],
+            explanation: "Supernetting ist eine Methode, bei der mehrere zusammenhängende Netzwerke zu einem größeren Netzwerk kombiniert werden, um IP-Adressräume effizienter zu nutzen."
         },
         {
-            question: "Welche IP-Adresse gehört zu den privaten Adressen?",
+            question: "41. Welche IP-Adresse gehört zu den privaten Adressen?",
             answers: [
                 "172.16.5.4",
                 "8.8.8.8",
                 "198.51.100.7",
                 "120.10.15.25"
             ],
-            correct: ["172.16.5.4"]
+            correct: ["172.16.5.4"],
+            explanation: "172.16.5.4 liegt im privaten IP-Adressbereich von 172.16.0.0 bis 172.31.255.255, der für private Netzwerke reserviert ist."
         },
         {
-            question: "Wozu dient die Subnetzmaske in einer IPv4-Adresse?",
+            question: "42. Wozu dient die Subnetzmaske in einer IPv4-Adresse?",
             answers: [
                 "Zur Unterscheidung von Netzwerk- und Host-ID.",
                 "Zur Identifizierung des Standardgateways.",
                 "Zur Verschlüsselung der Datenübertragung.",
                 "Zur Verbindung mit IPv6-Netzwerken."
             ],
-            correct: ["Zur Unterscheidung von Netzwerk- und Host-ID."]
+            correct: ["Zur Unterscheidung von Netzwerk- und Host-ID."],
+            explanation: "Die Subnetzmaske hilft zu bestimmen, welcher Teil der IP-Adresse das Netzwerk und welcher Teil den spezifischen Host beschreibt."
         },
-        // Fragen zu IPv4-Subnetting und Notation
-    {
-            question: "Welche Netzwerkklasse passt zu der Adresse 192.168.1.1?",
+        {
+            question: "43. Welche Netzwerkklasse passt zu der Adresse 192.168.1.1?",
             answers: [
                 "Klasse A",
                 "Klasse B",
                 "Klasse C",
                 "Klasse D"
             ],
-            correct: ["Klasse C"]
+            correct: ["Klasse C"],
+            explanation: "Die IP-Adresse 192.168.1.1 fällt in den Adressbereich der Klasse C, der von 192.0.0.0 bis 223.255.255.255 reicht."
         },
         {
-            question: "Welche Adresse stellt eine Broadcast-Adresse für ein /24-Subnetz dar?",
+            question: "44. Welche Adresse stellt eine Broadcast-Adresse für ein /24-Subnetz dar?",
             answers: [
                 "192.168.1.255",
                 "192.168.1.0",
                 "192.168.1.1",
                 "192.168.1.128"
             ],
-            correct: ["192.168.1.255"]
+            correct: ["192.168.1.255"],
+            explanation: "In einem /24-Subnetz stellt die Adresse 192.168.1.255 die Broadcast-Adresse dar, die für die Kommunikation mit allen Hosts im Subnetz verwendet wird."
         },
         {
-            question: "Was ist die erste nutzbare Adresse im Netzwerk 10.0.0.0/8?",
+            question: "45. Was ist die erste nutzbare Adresse im Netzwerk 10.0.0.0/8?",
             answers: [
                 "10.0.0.1",
                 "10.0.0.0",
                 "10.255.255.255",
                 "10.0.1.1"
             ],
-            correct: ["10.0.0.1"]
+            correct: ["10.0.0.1"],
+            explanation: "Die erste nutzbare IP-Adresse in einem /8-Subnetz beginnt bei 10.0.0.1, da 10.0.0.0 die Netzwerkadresse ist."
         },
         {
-            question: "Welche Methode könnte für die Planung von IPv4-Adresszuweisungen für mehrere Standorte verwendet werden?",
+            question: "46. Welche Methode könnte für die Planung von IPv4-Adresszuweisungen für mehrere Standorte verwendet werden?",
             answers: [
                 "Subnetting für jede Filiale",
                 "Verwenden einer einzelnen öffentlichen IP-Adresse",
                 "Zuweisung zufälliger IP-Adressen",
                 "Einsatz nur von APIPA-Adressen"
             ],
-            correct: ["Subnetting für jede Filiale"]
+            correct: ["Subnetting für jede Filiale"],
+            explanation: "Durch das Aufteilen des IP-Adressraums in Subnetze kann jeder Standort eine eigene, eindeutige IP-Adressierung verwenden."
         },
         {
-            question: "Wie viele nutzbare Hosts gibt es in einem /24-Subnetz?",
+            question: "47. Wie viele nutzbare Hosts gibt es in einem /24-Subnetz?",
             answers: [
                 "254",
                 "256",
                 "128",
                 "512"
             ],
-            correct: ["254"]
+            correct: ["254"],
+            explanation: "Ein /24-Subnetz hat 256 Adressen, wovon 254 für Hosts nutzbar sind. Die erste und letzte Adresse sind für das Netzwerk bzw. den Broadcast reserviert."
         },
         {
-            question: "Welche Adresse ist eine APIPA-Adresse?",
+            question: "48. Welche Adresse ist eine APIPA-Adresse?",
             answers: [
                 "169.254.1.1",
                 "10.0.0.1",
                 "192.168.0.1",
                 "172.16.0.1"
             ],
-            correct: ["169.254.1.1"]
+            correct: ["169.254.1.1"],
+            explanation: "APIPA-Adressen liegen im Bereich 169.254.0.0 bis 169.254.255.255 und werden automatisch vergeben, wenn kein DHCP-Server verfügbar ist."
         },
         {
-            question: "Welche IPv4-Adressen gelten als öffentliche Adressen?",
+            question: "49. Welche IPv4-Adressen gelten als öffentliche Adressen?",
             answers: [
                 "Adressen, die von IANA zugewiesen und im Internet routbar sind.",
                 "Adressen im Bereich 10.0.0.0/8.",
                 "Adressen im Bereich 172.16.0.0/12.",
                 "Adressen im Bereich 192.168.0.0/16."
             ],
-            correct: ["Adressen, die von IANA zugewiesen und im Internet routbar sind."]
+            correct: ["Adressen, die von IANA zugewiesen und im Internet routbar sind."],
+            explanation: "Öffentliche IP-Adressen werden von IANA zugewiesen und sind im Internet routbar, im Gegensatz zu privaten IP-Adressen."
         },
         {
-            question: "Welcher IPv4-Befehl fügt eine Route hinzu?",
+            question: "50. Welcher IPv4-Befehl fügt eine Route hinzu?",
             answers: [
                 "route add",
                 "ipconfig",
                 "ping",
                 "tracert"
             ],
-            correct: ["route add"]
+            correct: ["route add"],
+            explanation: "Der Befehl 'route add' wird verwendet, um eine neue Route zur Routingtabelle eines Hosts hinzuzufügen."
         },
         {
-            question: "Was zeigt die Routingtabelle auf einem Computer an?",
+            question: "51. Was zeigt die Routingtabelle auf einem Computer an?",
             answers: [
                 "Die Routen zu verschiedenen Netzwerken und deren Gateways",
                 "Die CPU-Auslastung",
                 "Alle laufenden Prozesse",
                 "Die verfügbare Speicherkapazität"
             ],
-            correct: ["Die Routen zu verschiedenen Netzwerken und deren Gateways"]
+            correct: ["Die Routen zu verschiedenen Netzwerken und deren Gateways"],
+            explanation: "Eine Routingtabelle enthält Informationen zu den verfügbaren Netzwerken, deren Routen und entsprechenden Gateways."
         },
         {
-            question: "Welches Tool bietet detaillierte Analysen für jeden Hop in einer Netzwerkroute?",
+            question: "52. Welches Tool bietet detaillierte Analysen für jeden Hop in einer Netzwerkroute?",
             answers: [
                 "Pathping",
                 "Tracert",
                 "Ping",
                 "Telnet"
             ],
-            correct: ["Pathping"]
+            correct: ["Pathping"],
+            explanation: "Pathping kombiniert die Funktionen von Ping und Tracert und bietet detaillierte Informationen über jeden Hop in einer Netzwerkroute."
         },
         {
-            question: "Welches PowerShell-Cmdlet ermöglicht das Erkennen von Routingproblemen?",
+            question: "53. Welches PowerShell-Cmdlet ermöglicht das Erkennen von Routingproblemen?",
             answers: [
                 "Test-NetConnection –TraceRoute",
                 "Get-NetAdapter",
                 "Set-NetIPAddress",
                 "Get-NetIPInterface"
             ],
-            correct: ["Test-NetConnection –TraceRoute"]
+            correct: ["Test-NetConnection –TraceRoute"],
+            explanation: "Das Cmdlet 'Test-NetConnection –TraceRoute' in PowerShell hilft bei der Analyse von Routingpfaden und Netzwerkproblemen."
         },
         {
-            question: "Wie lässt sich die automatische Konfiguration von IPv4 aktivieren?",
+            question: "54. Wie lässt sich die automatische Konfiguration von IPv4 aktivieren?",
             answers: [
                 "Durch das Aktivieren des DHCP-Clients",
                 "Durch das manuelle Hinzufügen von Routen",
                 "Durch die Verwendung von statischen IP-Adressen",
                 "Durch die Eingabe von APIPA-Adressen"
             ],
-            correct: ["Durch das Aktivieren des DHCP-Clients"]
+            correct: ["Durch das Aktivieren des DHCP-Clients"],
+            explanation: "Die Aktivierung des DHCP-Clients erlaubt die automatische Zuweisung von IP-Adressen und Netzwerkeinstellungen."
         },
         {
-            question: "Was ist ein Supernet?",
+            question: "55. Was ist ein Supernet?",
             answers: [
                 "Ein Netzwerk, das aus mehreren zusammenhängenden Subnetzen besteht.",
                 "Ein einzelnes Subnetz mit einer großen Anzahl von Hosts.",
                 "Ein Netzwerk mit einer festen Anzahl von Hosts.",
                 "Ein Netzwerk, das nur private IP-Adressen verwendet."
             ],
-            correct: ["Ein Netzwerk, das aus mehreren zusammenhängenden Subnetzen besteht."]
+            correct: ["Ein Netzwerk, das aus mehreren zusammenhängenden Subnetzen besteht."],
+            explanation: "Ein Supernet entsteht, wenn mehrere Subnetze zu einem größeren Netzwerk zusammengefasst werden, um Adressbereiche effizienter zu nutzen."
         },
         {
-            question: "Welcher IPv4-Adressbereich wird typischerweise für private Netzwerke verwendet?",
+            question: "56. Welcher IPv4-Adressbereich wird typischerweise für private Netzwerke verwendet?",
             answers: [
                 "192.168.0.0/16",
                 "8.8.8.0/24",
                 "172.15.0.0/12",
                 "120.10.10.0/24"
             ],
-            correct: ["192.168.0.0/16"]
+            correct: ["192.168.0.0/16"],
+            explanation: "Der Bereich 192.168.0.0/16 ist für private Netzwerke reserviert und wird nicht im öffentlichen Internet verwendet."
         },
         {
-            question: "Welches Tool kann für die Analyse von Netzwerkpaketen verwendet werden?",
+            question: "57. Welches Tool kann für die Analyse von Netzwerkpaketen verwendet werden?",
             answers: [
                 "Microsoft Message Analyzer",
                 "ipconfig",
                 "netstat",
                 "pathping"
             ],
-            correct: ["Microsoft Message Analyzer"]
+            correct: ["Microsoft Message Analyzer"],
+            explanation: "Microsoft Message Analyzer ist ein Tool zur Analyse von Netzwerkpaketen und zur Fehlersuche in Netzwerken."
         },
-        // Fragen zur Einführung und Vorteile von IPv6
         {
-            question: "Warum wird die Einführung von IPv6 empfohlen?",
+            question: "58. Warum wird die Einführung von IPv6 empfohlen?",
             answers: [
                 "Wegen des begrenzten IPv4-Adressraums und des Internetausbaus.",
                 "Weil IPv6-Adressen einfacher zu verstehen sind.",
                 "IPv6 benötigt keine Routingtabellen.",
                 "IPv6 nutzt die gleiche Struktur wie IPv4."
             ],
-            correct: ["Wegen des begrenzten IPv4-Adressraums und des Internetausbaus."]
+            correct: ["Wegen des begrenzten IPv4-Adressraums und des Internetausbaus."],
+            explanation: "IPv6 bietet eine deutlich größere Adresskapazität, die für das Wachstum des Internets notwendig ist, da IPv4-Adressen fast ausgeschöpft sind."
         },
         {
-            question: "Welche Verbesserung bietet IPv6 für die Qualität der Datenübertragung?",
+            question: "59. Welche Verbesserung bietet IPv6 für die Qualität der Datenübertragung?",
             answers: [
                 "Unterstützung von Quality of Service (QoS)",
                 "Reduzierte Paketgröße",
                 "Schnellere Datenverschlüsselung",
                 "Verbindung nur über kabelgebundene Netzwerke"
             ],
-            correct: ["Unterstützung von Quality of Service (QoS)"]
+            correct: ["Unterstützung von Quality of Service (QoS)"],
+            explanation: "IPv6 ermöglicht die Priorisierung bestimmter Datenpakete, was für Anwendungen mit hohen Echtzeitanforderungen von Vorteil ist."
         },
-
-        // Fragen zu IPv6-Adressstruktur und -notation
         {
-            question: "Wie viele Bits hat eine IPv6-Adresse?",
+            question: "60. Wie viele Bits hat eine IPv6-Adresse?",
             answers: [
                 "128 Bits",
                 "64 Bits",
                 "32 Bits",
                 "256 Bits"
             ],
-            correct: ["128 Bits"]
+            correct: ["128 Bits"],
+            explanation: "IPv6-Adressen haben eine Länge von 128 Bits, was im Vergleich zu den 32-Bit-IPv4-Adressen eine erhebliche Erweiterung darstellt."
         },
         {
-            question: "Wie sieht die vereinfachte Schreibweise einer IPv6-Adresse aus?",
+            question: "61. Wie sieht die vereinfachte Schreibweise einer IPv6-Adresse aus?",
             answers: [
                 "Durch Entfernen der führenden Nullen in jedem 16-Bit-Block",
                 "Durch Verwenden von Dezimalzahlen",
                 "Durch Hinzufügen zusätzlicher Nullen",
                 "Durch Kürzen der Adresse auf 64 Bits"
             ],
-            correct: ["Durch Entfernen der führenden Nullen in jedem 16-Bit-Block"]
+            correct: ["Durch Entfernen der führenden Nullen in jedem 16-Bit-Block"],
+            explanation: "IPv6-Adressen können durch Entfernen der führenden Nullen in jedem Block vereinfacht werden, um die Lesbarkeit zu verbessern."
         },
         {
-            question: "Welche Teile hat eine IPv6-Adresse?",
+            question: "62. Welche Teile hat eine IPv6-Adresse?",
             answers: [
                 "Netzwerkpräfix und Schnittstellenbezeichner",
                 "Subnetz und Hostanteil",
                 "IPv4- und IPv6-Teile",
                 "Nur einen Hostanteil"
             ],
-            correct: ["Netzwerkpräfix und Schnittstellenbezeichner"]
+            correct: ["Netzwerkpräfix und Schnittstellenbezeichner"],
+            explanation: "IPv6-Adressen bestehen aus einem Präfix, das das Netzwerk identifiziert, und einem Schnittstellenbezeichner, der den Host innerhalb des Netzwerks bestimmt."
         },
-
-        // Fragen zu IPv6-Adresstypen
         {
-            question: "Welche Adresstypen werden in IPv6 unterstützt?",
+            question: "63. Welche Adresstypen werden in IPv6 unterstützt?",
             answers: [
                 "Unicast, Multicast und Anycast",
                 "Broadcast, Anycast und Unicast",
                 "Unicast und Broadcast",
                 "Nur Unicast"
             ],
-            correct: ["Unicast, Multicast und Anycast"]
+            correct: ["Unicast, Multicast und Anycast"],
+            explanation: "IPv6 verwendet Unicast für individuelle Adressierung, Multicast für Gruppenadressierung und Anycast, um den nächstgelegenen Host einer Gruppe zu erreichen."
         },
         {
-            question: "Wofür werden globale Unicast-Adressen in IPv6 verwendet?",
+            question: "64. Wofür werden globale Unicast-Adressen in IPv6 verwendet?",
             answers: [
                 "Für das Routing im Internet",
                 "Für lokale Netzwerke",
                 "Für das Senden von Broadcasts",
                 "Nur für Multicast-Übertragungen"
             ],
-            correct: ["Für das Routing im Internet"]
+            correct: ["Für das Routing im Internet"],
+            explanation: "Globale Unicast-Adressen sind eindeutig und werden verwendet, um IPv6-fähige Geräte im Internet zu identifizieren."
         },
         {
-            question: "Welche Funktion haben eindeutige lokale Adressen in IPv6?",
+            question: "65. Welche Funktion haben eindeutige lokale Adressen in IPv6?",
             answers: [
                 "Sie sind mit privaten IPv4-Adressen vergleichbar.",
                 "Sie sind für das globale Internet routingfähig.",
                 "Sie unterstützen die QoS-Funktionalität.",
                 "Sie dienen nur als Multicast-Adressen."
             ],
-            correct: ["Sie sind mit privaten IPv4-Adressen vergleichbar."]
+            correct: ["Sie sind mit privaten IPv4-Adressen vergleichbar."],
+            explanation: "Ähnlich wie private IPv4-Adressen sind eindeutige lokale Adressen in IPv6 für die Verwendung innerhalb eines lokalen Netzwerks gedacht und nicht im Internet routbar."
         },
         {
-            question: "Was zeichnet verbindungslokale Adressen in IPv6 aus?",
+            question: "66. Was zeichnet verbindungslokale Adressen in IPv6 aus?",
             answers: [
                 "Sie werden auf allen IPv6-Hosts automatisch generiert.",
                 "Sie benötigen manuelle Konfiguration.",
                 "Sie sind global routingfähig.",
                 "Sie können nicht für Multicast verwendet werden."
             ],
-            correct: ["Sie werden auf allen IPv6-Hosts automatisch generiert."]
+            correct: ["Sie werden auf allen IPv6-Hosts automatisch generiert."],
+            explanation: "Verbindungslokale Adressen sind selbstkonfigurierende Adressen, die für die Kommunikation innerhalb des lokalen Netzwerks verwendet werden."
         },
-
-        // Fragen zu IPv6-Autokonfiguration
         {
-            question: "Welche Autokonfigurationsmethoden sind für IPv6 verfügbar?",
+            question: "67. Welche Autokonfigurationsmethoden sind für IPv6 verfügbar?",
             answers: [
                 "SLAAC (Stateless Address Autoconfiguration) und DHCPv6",
                 "Nur statische Adresszuweisung",
                 "Nur DHCPv4",
                 "Keine Autokonfiguration verfügbar"
             ],
-            correct: ["SLAAC (Stateless Address Autoconfiguration) und DHCPv6"]
+            correct: ["SLAAC (Stateless Address Autoconfiguration) und DHCPv6"],
+            explanation: "IPv6 unterstützt die automatische Adresszuweisung über SLAAC und DHCPv6, was die Konfiguration in großen Netzwerken vereinfacht."
         },
         {
-            question: "Welche Informationen kann ein IPv6-Router für die Autokonfiguration bereitstellen?",
+            question: "68. Welche Informationen kann ein IPv6-Router für die Autokonfiguration bereitstellen?",
             answers: [
                 "Präfixe und Routerkonfigurationsinformationen",
                 "Nur die Subnetzmaske",
                 "Nur die MAC-Adresse",
                 "IP-Adressen für IPv4"
             ],
-            correct: ["Präfixe und Routerkonfigurationsinformationen"]
+            correct: ["Präfixe und Routerkonfigurationsinformationen"],
+            explanation: "Ein IPv6-Router kann Präfixinformationen und andere Netzwerkdaten senden, um eine autokonfigurierte IPv6-Umgebung zu unterstützen."
         },
-
-        // Fragen zur Koexistenz von IPv4 und IPv6 und dem Übergang
         {
-            question: "Warum ist eine Koexistenz von IPv4 und IPv6 notwendig?",
+            question: "69. Warum ist eine Koexistenz von IPv4 und IPv6 notwendig?",
             answers: [
                 "Da IPv4- und IPv6-Netzwerke gleichzeitig existieren und interoperieren müssen.",
                 "Weil IPv6 nur in privaten Netzwerken verwendet wird.",
                 "Weil IPv6 vollständig abwärtskompatibel zu IPv4 ist.",
                 "Weil IPv6 nur in zukünftigen Netzwerken unterstützt wird."
             ],
-            correct: ["Da IPv4- und IPv6-Netzwerke gleichzeitig existieren und interoperieren müssen."]
+            correct: ["Da IPv4- und IPv6-Netzwerke gleichzeitig existieren und interoperieren müssen."],
+            explanation: "Da viele Netzwerke noch IPv4 verwenden, ist die Interoperabilität zwischen IPv4 und IPv6 während der Übergangszeit notwendig."
         },
         {
-            question: "Welcher Adresstyp wird für IPv4- und IPv6-Kompatibilität verwendet?",
+            question: "70. Welcher Adresstyp wird für IPv4- und IPv6-Kompatibilität verwendet?",
             answers: [
                 "Übergangsadressen",
                 "Multicast-Adressen",
                 "Nur lokale Adressen",
                 "Statische IPv6-Adressen"
             ],
-            correct: ["Übergangsadressen"]
+            correct: ["Übergangsadressen"],
+            explanation: "Übergangsadressen wie IPv4-kompatible und IPv4-abgebildete Adressen helfen bei der Kommunikation zwischen IPv4- und IPv6-Systemen."
+        },
+        {
+            question: "71. Welche IPv6-Adresse wird als globales Adresspräfix für den neuen Standort verwendet?",
+            answers: [
+                "3FFA:FF2B:4D:A000::/51",
+                "2001:0DB8:85A3:0000::/64",
+                "FE80::/10",
+                "FF00::/8"
+            ],
+            correct: ["3FFA:FF2B:4D:A000::/51"],
+            explanation: "Das Dokument spezifiziert 3FFA:FF2B:4D:A000::/51 als das globale Adresspräfix, das für den neuen Standort verwendet werden soll."
+        },
+        {
+            question: "72. Wie lautet die erweiterte Darstellung der Adresse 3FFA:FF2B:4D:A000::/51?",
+            answers: [
+                "3FFA:FF2B:004D:A000:0000:0000:0000:0000/51",
+                "3FFA:FF2B:0000:0000:0000:0000:0000:0001/51",
+                "3FFA:FF2B:4D:A0:0:0:0:1/51",
+                "3FFA:FF2B:4D:AFFF:FFFF:FFFF:FFFF:FFFF/51"
+            ],
+            correct: ["3FFA:FF2B:004D:A000:0000:0000:0000:0000/51"],
+            explanation: "In der erweiterten Darstellung wird jedes Segment auf 4 Zeichen erweitert, daher lautet die Adresse 3FFA:FF2B:004D:A000:0000:0000:0000:0000/51."
+        },
+        {
+            question: "73. Welches ist das erste mögliche Subnetz, das vom Adresspräfix 3FFA:FF2B:4D:A000::/51 abgeleitet wird?",
+            answers: [
+                "3FFA:FF2B:4D:A800::/53",
+                "3FFA:FF2B:4D:A000::/53",
+                "3FFA:FF2B:4D:B000::/53",
+                "3FFA:FF2B:4D:B800::/53"
+            ],
+            correct: ["3FFA:FF2B:4D:A000::/53"],
+            explanation: "Das erste Subnetz, das aus dem Adresspräfix /51 abgeleitet wird, ist 3FFA:FF2B:4D:A000::/53."
+        },
+        {
+            question: "74. Welches IPv6-Subnetz entsteht, wenn das Bitmuster für das dritte Subnetz (B000) verwendet wird?",
+            answers: [
+                "3FFA:FF2B:4D:A800::/53",
+                "3FFA:FF2B:4D:A000::/51",
+                "3FFA:FF2B:4D:B000::/53",
+                "3FFA:FF2B:4D:B800::/51"
+            ],
+            correct: ["3FFA:FF2B:4D:B000::/53"],
+            explanation: "Das dritte Subnetz mit dem Bitmuster B000 ergibt 3FFA:FF2B:4D:B000::/53."
+        },
+        {
+            question: "75. Was ist das vierte IPv6-Subnetz basierend auf dem Adresspräfix 3FFA:FF2B:4D:A000::/51?",
+            answers: [
+                "3FFA:FF2B:4D:B800::/53",
+                "3FFA:FF2B:4D:A800::/53",
+                "3FFA:FF2B:4D:A000::/51",
+                "3FFA:FF2B:4D:C000::/53"
+            ],
+            correct: ["3FFA:FF2B:4D:B800::/53"],
+            explanation: "Das vierte Subnetz wird durch das Bitmuster B800 gebildet, daher lautet das Subnetz 3FFA:FF2B:4D:B800::/53."
+        },
+        {
+            question: "76. Welches Betriebssystem wird auf den Servern im Firmennetzwerk verwendet?",
+            answers: [
+                "Microsoft Windows Server 2016",
+                "Microsoft Windows Server 2012",
+                "Linux Ubuntu",
+                "macOS Server"
+            ],
+            correct: ["Microsoft Windows Server 2016"],
+            explanation: "Laut Dokument ist auf den Servern des Firmennetzwerks Microsoft Windows Server 2016 installiert."
+        },
+        {
+            question: "77. Welche Betriebssystemversion ist auf den Clientcomputern im Firmennetzwerk installiert?",
+            answers: [
+                "Microsoft Windows 10",
+                "Microsoft Windows 8",
+                "Linux Mint",
+                "macOS Catalina"
+            ],
+            correct: ["Microsoft Windows 10"],
+            explanation: "Laut Dokument verwenden die Clientcomputer das Betriebssystem Microsoft Windows 10."
+        },
+        {
+            question: "78. Wie viele Standorte hat das Unternehmen derzeit, einschließlich der geplanten Erweiterungen?",
+            answers: [
+                "Drei Standorte",
+                "Vier Standorte",
+                "Zwei Standorte",
+                "Fünf Standorte"
+            ],
+            correct: ["Vier Standorte"],
+            explanation: "Das Unternehmen verfügt derzeit über drei Standorte und plant einen vierten Standort."
+        },
+        {
+            question: "79. Warum ist IPv6 für Unternehmen zunehmend wichtig?",
+            answers: [
+                "Wegen der IPv4-Ausschöpfung und der Unterstützung für größere Routingtabellen",
+                "Weil IPv6 keine Subnetzmasken benötigt",
+                "Da IPv6 die einzige Möglichkeit zur Verbindung in privaten Netzwerken ist",
+                "Weil IPv6 nur auf mobilen Geräten unterstützt wird"
+            ],
+            correct: ["Wegen der IPv4-Ausschöpfung und der Unterstützung für größere Routingtabellen"],
+            explanation: "IPv6 wird immer wichtiger, da der IPv4-Adressraum ausgeschöpft ist und IPv6 größere Routingtabellen unterstützt."
+        },
+        {
+            question: "80. Welche Länge hat eine IPv6-Adresse?",
+            answers: [
+                "64 Bit",
+                "128 Bit",
+                "256 Bit",
+                "32 Bit"
+            ],
+            correct: ["128 Bit"],
+            explanation: "IPv6-Adressen sind 128 Bit lang und bieten einen größeren Adressraum als IPv4."
+        },
+        {
+            question: "3. Wie ist die IPv6-Adressenstruktur organisiert?",
+            answers: [
+                "64 Bits für die Netzwerk-ID und 64 Bits für den Host",
+                "48 Bits für die Netzwerk-ID und 80 Bits für den Host",
+                "96 Bits für die Netzwerk-ID und 32 Bits für den Host",
+                "128 Bits für den Host"
+            ],
+            correct: ["64 Bits für die Netzwerk-ID und 64 Bits für den Host"],
+            explanation: "In der IPv6-Struktur sind 64 Bits für die Netzwerk-ID und 64 Bits für den Host reserviert."
+        },
+        {
+            question: "81. Welche IPv6-Adresstypen gibt es?",
+            answers: [
+                "Unicast, Multicast und Anycast",
+                "Broadcast, Unicast und Multicast",
+                "Unicast, Broadcast und Anycast",
+                "Anycast, Broadcast und Loopback"
+            ],
+            correct: ["Unicast, Multicast und Anycast"],
+            explanation: "IPv6 verwendet die Adresstypen Unicast, Multicast und Anycast."
+        },
+        {
+            question: "82. Was ist eine IPv6-Global-Unicast-Adresse?",
+            answers: [
+                "Eine öffentlich routbare Adresse, die mit 2 oder 3 beginnt",
+                "Eine private Adresse für lokale Netzwerke",
+                "Eine spezielle Adresse für Multicast",
+                "Eine temporäre Adresse für Tests"
+            ],
+            correct: ["Eine öffentlich routbare Adresse, die mit 2 oder 3 beginnt"],
+            explanation: "IPv6-Global-Unicast-Adressen sind öffentlich routbar und beginnen oft mit 2000::/3."
+        },
+        {
+            question: "83. Wozu dient eine eindeutige lokale IPv6-Adresse?",
+            answers: [
+                "Zur Adressierung innerhalb privater Netzwerke, ähnlich wie private IPv4-Adressen",
+                "Zur öffentlichen Adressierung im Internet",
+                "Nur für den Zugriff auf IPv4-Netzwerke",
+                "Nur für Multicast-Kommunikation"
+            ],
+            correct: ["Zur Adressierung innerhalb privater Netzwerke, ähnlich wie private IPv4-Adressen"],
+            explanation: "Eindeutige lokale IPv6-Adressen sind private und für den lokalen Netzwerkverkehr gedacht, ähnlich wie private IPv4-Adressen."
+        },
+        {
+            question: "84. Welche Tools werden zur Konfiguration von IPv6 in Windows genutzt?",
+            answers: [
+                "Netsh, PowerShell-Cmdlets und TCP/IPv6-Eigenschaften",
+                "Ping, Ipconfig und Tracert",
+                "SSH, SCP und Telnet",
+                "FTP, HTTP und DNS"
+            ],
+            correct: ["Netsh, PowerShell-Cmdlets und TCP/IPv6-Eigenschaften"],
+            explanation: "IPv6 kann in Windows über Netsh, PowerShell-Cmdlets und die TCP/IPv6-Eigenschaften konfiguriert werden."
+        },
+        {
+            question: "85. Welche IPv6-Adressentypen werden automatisch auf Hosts generiert?",
+            answers: [
+                "Verbindungslokale Adressen",
+                "Globale Unicast-Adressen",
+                "Eindeutige lokale Adressen",
+                "Broadcast-Adressen"
+            ],
+            correct: ["Verbindungslokale Adressen"],
+            explanation: "Verbindungslokale IPv6-Adressen werden automatisch auf allen IPv6-Hosts generiert."
+        },
+        {
+            question: "86. Welche Vorteile bietet die IPv4- und IPv6-Koexistenz?",
+            answers: [
+                "Ermöglicht die parallele Nutzung und schrittweise Migration zu IPv6",
+                "Erhöht die Geschwindigkeit von IPv4-Verbindungen",
+                "Ermöglicht IPv6-Adressen in IPv4-Routern",
+                "Erfordert keine zusätzliche Konfiguration"
+            ],
+            correct: ["Ermöglicht die parallele Nutzung und schrittweise Migration zu IPv6"],
+            explanation: "IPv4- und IPv6-Koexistenz ermöglicht Unternehmen, IPv6 einzuführen, ohne IPv4 sofort abschalten zu müssen."
+        },
+        {
+            question: "87. Was ist IPv6-über-IPv4-Tunneling?",
+            answers: [
+                "Eine Methode, um IPv6-Verkehr über ein IPv4-Netzwerk zu senden",
+                "Eine Methode zur IPv4-Adressierung im IPv6-Netz",
+                "Eine Methode zur Verbesserung der IPv6-Sicherheit",
+                "Eine Methode zur Konvertierung von IPv4- in IPv6-Adressen"
+            ],
+            correct: ["Eine Methode, um IPv6-Verkehr über ein IPv4-Netzwerk zu senden"],
+            explanation: "Beim IPv6-über-IPv4-Tunneling wird IPv6-Verkehr in IPv4-Paketen gekapselt, um durch IPv4-Netzwerke zu reisen."
+        },
+        {
+            question: "88. Wofür wird ISATAP (Intra-Site Automatic Tunnel Addressing Protocol) verwendet?",
+            answers: [
+                "Für die IPv6-Kommunikation über ein IPv4-Intranet",
+                "Zur Erhöhung der IPv4-Routing-Kapazität",
+                "Für die Zuweisung von privaten IPv4-Adressen",
+                "Für die Verschlüsselung von IPv6-Paketen"
+            ],
+            correct: ["Für die IPv6-Kommunikation über ein IPv4-Intranet"],
+            explanation: "ISATAP ermöglicht IPv6-Kommunikation innerhalb eines IPv4-Intranets, indem IPv4-Adressen als Teil der IPv6-Adresse genutzt werden."
+        },
+        {
+            question: "89. Welche IPv6-Technologie ermöglicht NAT-Umgehung durch IPv4-Netzwerke?",
+            answers: [
+                "Teredo",
+                "ISATAP",
+                "IP6-zu-IP4",
+                "PortProxy"
+            ],
+            correct: ["Teredo"],
+            explanation: "Teredo ermöglicht IPv6-Verbindungen über NAT-Geräte im IPv4-Internet."
+        },
+        {
+            question: "90. Was ist ein IPv6-PortProxy?",
+            answers: [
+                "Er ermöglicht IPv6-Hosts den Zugriff auf IPv4-Anwendungen",
+                "Er bietet verschlüsselte IPv6-Verbindungen",
+                "Er wandelt IPv4-Adressen in IPv6-Adressen um",
+                "Er verbindet IPv6-Netzwerke direkt mit IPv4-Netzwerken"
+            ],
+            correct: ["Er ermöglicht IPv6-Hosts den Zugriff auf IPv4-Anwendungen"],
+            explanation: "PortProxy erlaubt IPv6-Hosts, auf IPv4-Anwendungen zuzugreifen, indem IPv6-Adressen auf IPv4-Ports abgebildet werden."
+        },
+        {
+            question: "91. Welche Methode dient zur IPv6-Adressauflösung in einem dualen IPv4/IPv6-Netzwerk?",
+            answers: [
+                "Erstellen von AAAA-Einträgen im DNS",
+                "Erstellen von CNAME-Einträgen im DNS",
+                "Hinzufügen von MX-Einträgen im DNS",
+                "Verwendung von DHCPv6 für alle Geräte"
+            ],
+            correct: ["Erstellen von AAAA-Einträgen im DNS"],
+            explanation: "AAAA-Einträge im DNS ermöglichen die IPv6-Adressauflösung in Netzwerken, die sowohl IPv4 als auch IPv6 unterstützen."
+        },
+        {
+            question: "92. Was ist der Zweck des Übergangs von IPv4 zu IPv6?",
+            answers: [
+                "Um IPv6 vollständig zu unterstützen, müssen Anwendungen, Router und DNS aktualisiert werden",
+                "Um IPv4 abzuschalten und stattdessen MAC-Adressen zu verwenden",
+                "Nur zur Umstellung auf ein drahtloses Netzwerk",
+                "Zur Reduzierung der Netzwerkgeschwindigkeit"
+            ],
+            correct: ["Um IPv6 vollständig zu unterstützen, müssen Anwendungen, Router und DNS aktualisiert werden"],
+            explanation: "Für den Übergang zu IPv6 ist eine Aktualisierung der Netzwerkgeräte, Anwendungen und des DNS erforderlich, um IPv6-Kommunikation zu ermöglichen."
+        },
+        {
+            question: "93. Welcher Netzbereich soll in Subnetze unterteilt werden?",
+            answers: [
+                "2001:B6::180:0:0/90",
+                "2001:0DB8::/32",
+                "FE80::/10",
+                "FF00::/8"
+            ],
+            correct: ["2001:B6::180:0:0/90"],
+            explanation: "Der Netzbereich 2001:B6::180:0:0/90 ist der zu unterteilende Bereich, aus dem neue Subnetze gebildet werden sollen."
+        },
+        {
+            question: "94. In wie viele Subnetze soll der Netzbereich 2001:B6::180:0:0/90 unterteilt werden?",
+            answers: [
+                "5 Subnetze",
+                "3 Subnetze",
+                "10 Subnetze",
+                "7 Subnetze"
+            ],
+            correct: ["5 Subnetze"],
+            explanation: "Laut Aufgabe soll der Netzbereich in genau 5 Subnetze aufgeteilt werden."
+        },
+        {
+            question: "95. Welche Methode wird verwendet, um den Netzbereich in mehrere Subnetze zu unterteilen?",
+            answers: [
+                "Subnetting",
+                "Supernetting",
+                "NAT",
+                "Tunneling"
+            ],
+            correct: ["Subnetting"],
+            explanation: "Durch Subnetting wird der Netzbereich in kleinere Subnetze aufgeteilt, die jeweils eigene Netzwerkadressen haben."
+        },
+        {
+            question: "96. Wie lautet die Netzwerkadresse des ersten Subnetzes, das aus dem Bereich 2001:B6::180:0:0/90 gebildet wird?",
+            answers: [
+                "2001:B6::180:0:0/91",
+                "2001:B6::180:0:0/90",
+                "2001:B6::180:0:0/92",
+                "2001:B6::180:0:0/93"
+            ],
+            correct: ["2001:B6::180:0:0/91"],
+            explanation: "Das erste Subnetz hat die Adresse 2001:B6::180:0:0/91, da durch das Subnetting die Präfixlänge um 1 erhöht wird."
+        },
+        {
+            question: "97. Was ist die Netzwerkadresse des zweiten Subnetzes nach der Unterteilung des Bereichs 2001:B6::180:0:0/90?",
+            answers: [
+                "2001:B6::180:0:2/91",
+                "2001:B6::180:0:1/91",
+                "2001:B6::180:0:0/91",
+                "2001:B6::180:0:4/91"
+            ],
+            correct: ["2001:B6::180:0:1/91"],
+            explanation: "Das zweite Subnetz hat die Netzwerkadresse 2001:B6::180:0:1/91, basierend auf der inkrementellen Erhöhung im Subnetting."
+        },
+        {
+            question: "98. Wie lautet die Netzwerkadresse des dritten Subnetzes aus dem Bereich 2001:B6::180:0:0/90?",
+            answers: [
+                "2001:B6::180:0:2/91",
+                "2001:B6::180:0:1/91",
+                "2001:B6::180:0:3/91",
+                "2001:B6::180:0:4/91"
+            ],
+            correct: ["2001:B6::180:0:2/91"],
+            explanation: "Die Netzwerkadresse des dritten Subnetzes ist 2001:B6::180:0:2/91, entsprechend der fortlaufenden Adressierung der Subnetze."
+        },
+        {
+            question: "99. Was ist die Netzwerkadresse des vierten Subnetzes nach der Unterteilung des Bereichs 2001:B6::180:0:0/90?",
+            answers: [
+                "2001:B6::180:0:3/91",
+                "2001:B6::180:0:4/91",
+                "2001:B6::180:0:1/91",
+                "2001:B6::180:0:5/91"
+            ],
+            correct: ["2001:B6::180:0:3/91"],
+            explanation: "Das vierte Subnetz erhält die Adresse 2001:B6::180:0:3/91, basierend auf der fortlaufenden Zuweisung im Subnetting."
+        },
+        {
+            question: "100. Wie lautet die Netzwerkadresse des fünften Subnetzes für den Netzbereich 2001:B6::180:0:0/90?",
+            answers: [
+                "2001:B6::180:0:4/91",
+                "2001:B6::180:0:3/91",
+                "2001:B6::180:0:5/91",
+                "2001:B6::180:0:6/91"
+            ],
+            correct: ["2001:B6::180:0:4/91"],
+            explanation: "Das fünfte Subnetz hat die Adresse 2001:B6::180:0:4/91, gemäß der inkrementellen Verteilung der Subnetze."
         },
 
         ],
