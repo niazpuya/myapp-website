@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <title>Quiz Application</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Netzwerk- und Kommunikationstechnik</h1>
+        <div class="category-select">
+            <h2>Wähle eine Kategorie:</h2>
+            <select id="category-select">
+                <option value="general">Allgemein (Alle Kategorien)</option>
+                <option value="networking">Netzwerk</option>
+                <option value="command">Kommando</option>
+                <option value="OSI">OSI-Modell</option>
+                <option value="numberSystem">Numbering System</option>
+                <option value="SwitchingAlgebra">Schaltalgebra</option>
+                <option value="Protocol">Protocol</option>
+                <option value="IPADD">Ip-add</option>
+            </select>
+        </div>
+        <div id="question-container" class="hidden">
+            <div class="question"></div>
+            <div class="answers"></div>
+        </div>
+        <button id="start-btn">Starten</button>
+        <button id="submit-btn" class="hidden">Antworten überprüfen</button>
+        <button id="next-btn" class="hidden">Nächste Frage</button>
+        <button id="prev-btn" class="hidden">Vorherige Frage</button>
+        <button id="main-page-btn">Zurück zur Hauptseite</button> <!-- Button to navigate back -->
+        <div id="result"></div>
+        <div id="explanation" style="display:none;">
+            <h2>Erklärung</h2>
+            <p id="explanation-text"></p>
+        </div>
+        <div id="incorrect-explanations" style="display:none;">
+            <h2>Falsche Antworten Erklärung</h2>
+            <p id="incorrect-explanation-text"></p>
+        </div>
+        <div id="mastery-status" class="hidden">
+            <h2>Frage Meisterschaft</h2>
+            <p id="mastery-text"></p>
+        </div>
+        <div id="progress-summary" class="hidden">
+            <h2>Endergebnis</h2>
+            <p id="correct-count"></p>
+            <p id="incorrect-count"></p>
+            <p id="mastered-questions"></p>
+            <p id="needs-practice-questions"></p>
+            <p id="percentage-score"></p>
+        </div>
+    </div>
+
+    <script src="data/question1.js"></script>
+    <script src="path/to/your/javascript/file.js"></script> <!-- Ensure the path to your JavaScript is correct -->
+</body>
+</html>

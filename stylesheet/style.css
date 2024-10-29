@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(35, 199, 244);
+  color: rgb(31, 11, 11);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quiz-container {
+  background-color: rgb(171, 223, 155);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.category-select,
+.question,
+.answers {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;  /* Ensures the label is a block element for full width */
+  background-color: hsl(150, 88%, 41%);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: left; /* Aligns label text to the left */
+}
+
+label:hover {
+  background-color: #e6ceeb;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Button styles */
+button {
+  background-color: rgb(121, 235, 14);
+  color: #1c7d8a;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin: 5px 0; /* Add some space between buttons */
+}
+
+button:hover {
+  background-color: #e6e600; /* Hover effect for all buttons */
+}
+
+#result,
+#explanation,
+#incorrect-explanations,
+#mastery-status {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+#progress-summary {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* Style for the Main Page button specifically */
+#main-page-btn {
+  background-color: rgb(25, 235, 14); /* Different color for distinction */
+  color: black; /* White text for better contrast */
+}
+#main-page-btn:hover {
+  background-color: #e6e600; /* Lighter blue on hover */
+}
