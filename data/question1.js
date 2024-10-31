@@ -3203,6 +3203,746 @@ const questionsByCategory =
             correct: ["2001:B6::180:0:4/91"],
             explanation: "Das fünfte Subnetz hat die Adresse 2001:B6::180:0:4/91, gemäß der inkrementellen Verteilung der Subnetze."
         },
+        {
+            question: "101. Was ist ein vollqualifizierter Domänenname (Fully Qualified Domain Name, FQDN)?",
+            answers: [
+                "Ein vollständiger Name bestehend aus Hostname, Domäne und Top-Level-Domäne",
+                "Ein Name, der nur aus einer Top-Level-Domäne besteht",
+                "Ein zufällig generierter Netzwerkname",
+                "Ein Name, der nur den Hostnamen und die Top-Level-Domäne enthält"
+            ],
+            correct: ["Ein vollständiger Name bestehend aus Hostname, Domäne und Top-Level-Domäne"],
+            explanation: "Ein FQDN wie 'AcctDirPC.adatum.com' kombiniert Hostname, Domäne und Top-Level-Domäne."
+        },
+        {
+            question: "102. Welche Hauptkomponenten gehören zur DNS-Infrastruktur?",
+            answers: [
+                "DNS-Server, DNS-Zonen, DNS-Resolver und Ressourceneinträge",
+                "Router, Firewalls, Hostname und Netzwerke",
+                "FQDN, TLD und SLD",
+                "Nur Netzwerke und Hosts"
+            ],
+            correct: ["DNS-Server, DNS-Zonen, DNS-Resolver und Ressourceneinträge"],
+            explanation: "Die DNS-Infrastruktur umfasst Server, Zonen, Resolver und Ressourceneinträge, die zusammenarbeiten, um Namensauflösungen bereitzustellen."
+        },
+        {
+            question: "103. Was sind DNS-Zonen?",
+            answers: [
+                "Bestimmte Teile des DNS-Namespace, die DNS-Einträge enthalten",
+                "Nur die Top-Level-Domänen des DNS",
+                "Die physischen Standorte der DNS-Server",
+                "Listen von IP-Adressen, die auf einen Hostnamen verweisen"
+            ],
+            correct: ["Bestimmte Teile des DNS-Namespace, die DNS-Einträge enthalten"],
+            explanation: "Eine DNS-Zone ist ein Bereich im DNS-Namespace, der verschiedene DNS-Einträge wie A, MX und NS enthält."
+        },
+        {
+            question: "104. Welche Zonentypen gibt es in DNS?",
+            answers: [
+                "Forward-Lookup-Zone und Reverse-Lookup-Zone",
+                "Primary-Zone und Secondary-Zone",
+                "Only-Read-Zone und Write-Zone",
+                "Local-Zone und Global-Zone"
+            ],
+            correct: ["Forward-Lookup-Zone und Reverse-Lookup-Zone"],
+            explanation: "Es gibt Forward-Lookup-Zonen, die Hostnamen auf IP-Adressen abbilden, und Reverse-Lookup-Zonen für die umgekehrte Zuordnung."
+        },
+        {
+            question: "105. Welche Eintragstypen findet man in einer Forward-Lookup-Zone?",
+            answers: [
+                "A, MX, SRV, NS, SOA und CNAME",
+                "PTR, AAAA und TLD",
+                "Only-Read und Write",
+                "SLD, TLD und A-Records"
+            ],
+            correct: ["A, MX, SRV, NS, SOA und CNAME"],
+            explanation: "In einer Forward-Lookup-Zone findet man Einträge wie A, MX, SRV, NS, SOA und CNAME, die für die Namensauflösung zuständig sind."
+        },
+        {
+            question: "106. Was ist der Zweck eines PTR-Eintrags in einer Reverse-Lookup-Zone?",
+            answers: [
+                "Um IP-Adressen in Hostnamen aufzulösen",
+                "Zur Verwaltung von DNS-Servern",
+                "Zum Erstellen eines Alias für eine IP-Adresse",
+                "Zum Auflösen von Subnetzen in Zonen"
+            ],
+            correct: ["Um IP-Adressen in Hostnamen aufzulösen"],
+            explanation: "PTR-Einträge werden in Reverse-Lookup-Zonen verwendet, um IP-Adressen in Hostnamen aufzulösen."
+        },
+        {
+            question: "107. Wie installiert und konfiguriert man die DNS-Serverrolle in Windows?",
+            answers: [
+                "Über die Windows Server-Verwaltungskonsole oder PowerShell",
+                "Durch Hinzufügen von Benutzern zur DNS-Admin-Gruppe",
+                "Durch Aktivieren der DNS-Optionen im Netzwerkadapter",
+                "Durch Ändern der Registry-Einstellungen"
+            ],
+            correct: ["Über die Windows Server-Verwaltungskonsole oder PowerShell"],
+            explanation: "Die DNS-Serverrolle kann in Windows über die Verwaltungskonsole oder PowerShell installiert und konfiguriert werden."
+        },
+        {
+            question: "108. Welche Befehlszeilentools helfen bei der DNS-Problembehandlung?",
+            answers: [
+                "Nslookup, DNSCmd, DNSlint und Ipconfig",
+                "Ping, Tracert, Pathping und Telnet",
+                "Netsh, Set-Location und Diskpart",
+                "Get-Service, Get-Process und Test-Connection"
+            ],
+            correct: ["Nslookup, DNSCmd, DNSlint und Ipconfig"],
+            explanation: "Tools wie Nslookup, DNSCmd, DNSlint und Ipconfig sind nützlich für die DNS-Problembehandlung."
+        },
+        {
+            question: "109. Wie funktioniert die DNS-Namensauflösung?",
+            answers: [
+                "Sie übersetzt Hostnamen in IP-Adressen und umgekehrt.",
+                "Sie erstellt neue IP-Adressen für Hosts.",
+                "Sie aktualisiert die Netzwerkkonfiguration automatisch.",
+                "Sie ändert die MAC-Adresse eines Hosts."
+            ],
+            correct: ["Sie übersetzt Hostnamen in IP-Adressen und umgekehrt."],
+            explanation: "DNS übersetzt Hostnamen in IP-Adressen, um den Zugriff auf Netzwerke und Ressourcen zu erleichtern."
+        },
+        {
+            question: "110. Was sind primäre und sekundäre DNS-Zonen?",
+            answers: [
+                "Primäre Zonen sind beschreibbar, sekundäre Zonen sind schreibgeschützt",
+                "Sekundäre Zonen verwalten die primären Zonen",
+                "Primäre Zonen können nur gelesen werden",
+                "Sekundäre Zonen sind die Master-Zonen"
+            ],
+            correct: ["Primäre Zonen sind beschreibbar, sekundäre Zonen sind schreibgeschützt"],
+            explanation: "Primäre DNS-Zonen sind beschreibbar und enthalten die Originaleinträge, während sekundäre Zonen Kopien für Redundanz und Ausfallsicherheit bieten."
+        },
+        {
+            question: "111. Welche Rolle spielt DNS-Caching in der Namensauflösung?",
+            answers: [
+                "Es speichert bereits aufgelöste Namen lokal, um Anfragen zu beschleunigen.",
+                "Es überprüft die Integrität von IP-Adressen.",
+                "Es speichert MAC-Adressen.",
+                "Es aktualisiert ständig die Routingtabellen."
+            ],
+            correct: ["Es speichert bereits aufgelöste Namen lokal, um Anfragen zu beschleunigen."],
+            explanation: "DNS-Caching speichert kürzlich aufgelöste Namen lokal, was die Geschwindigkeit der Namensauflösung bei wiederholten Anfragen erhöht."
+        },
+        {
+            question: "112. Was versteht man unter DNS-Weiterleitung?",
+            answers: [
+                "Das Weiterleiten von Anfragen an andere DNS-Server, wenn der lokale Server keine Antwort hat",
+                "Das Löschen aller DNS-Einträge",
+                "Die automatische Erneuerung von DNS-Einträgen",
+                "Die Überwachung von DNS-Servern"
+            ],
+            correct: ["Das Weiterleiten von Anfragen an andere DNS-Server, wenn der lokale Server keine Antwort hat"],
+            explanation: "DNS-Weiterleitung leitet Anfragen an einen anderen DNS-Server weiter, falls der lokale Server die Anfrage nicht auflösen kann."
+        },
+        {
+            question: "113. Wofür wird eine Stubzone in DNS verwendet?",
+            answers: [
+                "Zum Erstellen einer Kopie der Nameserver-Informationen einer anderen Zone",
+                "Zum Speichern aller IP-Adressen in einer Zone",
+                "Zum Blockieren von DNS-Anfragen",
+                "Zum Konfigurieren von DHCP-Optionen"
+            ],
+            correct: ["Zum Erstellen einer Kopie der Nameserver-Informationen einer anderen Zone"],
+            explanation: "Stubzonen enthalten Informationen über Nameserver in anderen Zonen und helfen dabei, Anfragen an die richtige Zone zu leiten."
+        },
+        {
+            question: "114. Welche PowerShell-Cmdlets sind für die DNS-Fehlerbehebung hilfreich?",
+            answers: [
+                "Get-DnsServerStatistics, Test-DnsServer, Resolve-DnsName",
+                "New-Item, Set-Content, Get-Process",
+                "Get-Mailbox, Test-Service, Get-Service",
+                "Ping, Tracert, Netstat"
+            ],
+            correct: ["Get-DnsServerStatistics, Test-DnsServer, Resolve-DnsName"],
+            explanation: "Cmdlets wie Get-DnsServerStatistics, Test-DnsServer und Resolve-DnsName unterstützen die Fehlerbehebung und Analyse von DNS-Servern."
+        },
+        {
+            question: "115. Wie kann die Überwachung eines DNS-Servers konfiguriert werden?",
+            answers: [
+                "Über die Registerkarte 'Überwachung' in der DNS-Konsole oder PowerShell",
+                "Nur durch regelmäßige Neustarts",
+                "Durch das Deaktivieren der DNS-Dienste",
+                "Durch Ändern der IP-Adresse des DNS-Servers"
+            ],
+            correct: ["Über die Registerkarte 'Überwachung' in der DNS-Konsole oder PowerShell"],
+            explanation: "In der Registerkarte 'Überwachung' oder über PowerShell können Überwachungsoptionen wie einfache und rekursive Abfragen konfiguriert werden."
+        },
+        {
+                question: "116. Wofür steht DNS?",
+                answers: [
+                    "Domain Name System",
+                    "Digital Network System",
+                    "Dynamic Network Service",
+                    "Domain Naming Service"
+                ],
+                correct: ["Domain Name System"],
+                explanation: "DNS steht für Domain Name System und ermöglicht die Namensauflösung von Hostnamen zu IP-Adressen."
+            },
+            {
+                question: "117. Was ist die Hauptaufgabe des DNS?",
+                answers: [
+                    "Namensauflösung von Hostnamen zu IP-Adressen",
+                    "Zuweisung von MAC-Adressen",
+                    "Sicherheitsüberwachung",
+                    "Verbindungsüberwachung"
+                ],
+                correct: ["Namensauflösung von Hostnamen zu IP-Adressen"],
+                explanation: "DNS ermöglicht die Zuordnung von Hostnamen zu IP-Adressen, was die Navigation im Internet erleichtert."
+            },
+            {
+                question: "118. Welche Anfragearten werden im DNS verwendet?",
+                answers: [
+                    "Iterative und rekursive Anfragen",
+                    "Einmalige Anfragen",
+                    "Direkte und indirekte Anfragen",
+                    "Namentliche Anfragen"
+                ],
+                correct: ["Iterative und rekursive Anfragen"],
+                explanation: "DNS verwendet iterative Anfragen, bei denen ein Server eine Teillösung liefert, und rekursive Anfragen, die bis zur Lösung weitergeleitet werden."
+            },
+            {
+                question: "119. Was ist eine DNS-Zone?",
+                answers: [
+                    "Ein Teilbereich einer Domain, der auf andere Nameserver delegiert wird.",
+                    "Die gesamte Datenbank aller Domains.",
+                    "Ein Protokoll zur Datenverschlüsselung.",
+                    "Eine IP-Adresse im DNS-System."
+                ],
+                correct: ["Ein Teilbereich einer Domain, der auf andere Nameserver delegiert wird."],
+                explanation: "Eine Zone ist ein Bereich einer Domain, der bestimmten Nameservern zur Verwaltung zugeordnet ist."
+            },
+            {
+                question: "120. Was enthält der SOA (Start of Authority) Eintrag?",
+                answers: [
+                    "Wichtige Verwaltungsinformationen einer DNS-Zone.",
+                    "Nur die IP-Adressen aller Hosts.",
+                    "Die physische Adresse des Servers.",
+                    "Den Standort des Servers."
+                ],
+                correct: ["Wichtige Verwaltungsinformationen einer DNS-Zone."],
+                explanation: "Der SOA-Eintrag enthält Verwaltungsdetails, die festlegen, wie oft Aktualisierungen und Abfragen erfolgen."
+            },
+            {
+                question: "121. Wofür steht der Serial im SOA Eintrag?",
+                answers: [
+                    "Er gibt an, ob sich das Zonefile geändert hat.",
+                    "Er zeigt die Bandbreite an.",
+                    "Er ist der Speicherort des DNS-Servers.",
+                    "Er steht für die Netzwerkgeschwindigkeit."
+                ],
+                correct: ["Er gibt an, ob sich das Zonefile geändert hat."],
+                explanation: "Der Serial gibt an, ob das Zonefile aktualisiert wurde. Eine erhöhte Seriennummer zeigt Änderungen an."
+            },
+            {
+                question: "122. Was ist ein NS-Record im DNS?",
+                answers: [
+                    "Ein Eintrag, der den autoritativen Nameserver für eine Domain angibt.",
+                    "Ein Eintrag, der den Mailserver festlegt.",
+                    "Ein Eintrag, der die Subnetzmaske definiert.",
+                    "Ein Eintrag, der die IP-Adresse des Routers angibt."
+                ],
+                correct: ["Ein Eintrag, der den autoritativen Nameserver für eine Domain angibt."],
+                explanation: "Ein NS-Record legt den autoritativen Nameserver für eine Domain fest."
+            },
+            {
+                question: "123. Wofür wird ein A-Record verwendet?",
+                answers: [
+                    "Zur Verknüpfung eines Hostnamens mit einer IP-Adresse.",
+                    "Zur Zuordnung eines MAC-Adresse mit einem Hostnamen.",
+                    "Zum Erstellen einer E-Mail-Adresse.",
+                    "Zum Definieren eines DNS-Servers."
+                ],
+                correct: ["Zur Verknüpfung eines Hostnamens mit einer IP-Adresse."],
+                explanation: "Ein A-Record weist einem Hostnamen eine spezifische IP-Adresse zu."
+            },
+            {
+                question: "124. Was zeigt ein MX-Record an?",
+                answers: [
+                    "Den Mailserver einer Domain.",
+                    "Die maximale Bandbreite des Netzwerks.",
+                    "Den Primärserver für die Datenbank.",
+                    "Den Hauptrouter im Netzwerk."
+                ],
+                correct: ["Den Mailserver einer Domain."],
+                explanation: "Ein MX-Record definiert den Mailserver für eine Domain und kann Prioritäten festlegen."
+            },
+            {
+                question: "125. Was ist ein CNAME (Canonical Name)?",
+                answers: [
+                    "Ein Aliasname, der auf einen anderen Hostnamen verweist.",
+                    "Der Hauptname des DNS-Servers.",
+                    "Eine IP-Adresse für mehrere Hosts.",
+                    "Ein alternatives Protokoll für DNS."
+                ],
+                correct: ["Ein Aliasname, der auf einen anderen Hostnamen verweist."],
+                explanation: "CNAMEs sind Aliasnamen, die eine Domain auf einen anderen Hostnamen verweisen lassen."
+            },
+            {
+                question: "126. Was macht ein PTR-Record?",
+                answers: [
+                    "Weist eine IP-Adresse einem Host zu.",
+                    "Definiert den sekundären DNS-Server.",
+                    "Leitet Anfragen an den Root-Server weiter.",
+                    "Erstellt eine statische Route."
+                ],
+                correct: ["Weist eine IP-Adresse einem Host zu."],
+                explanation: "PTR-Records werden im Reverse-DNS verwendet, um eine IP-Adresse einem Hostnamen zuzuordnen."
+            },
+            {
+                question: "127. Was ist ein SRV-Record?",
+                answers: [
+                    "Ein Eintrag für einen spezifischen Dienst auf einem Host.",
+                    "Ein Eintrag für den Sekundärserver.",
+                    "Ein Eintrag für die Bandbreite des Netzwerks.",
+                    "Ein Eintrag zur Identifikation von Domain-Varianten."
+                ],
+                correct: ["Ein Eintrag für einen spezifischen Dienst auf einem Host."],
+                explanation: "Ein SRV-Record spezifiziert, welcher Host einen bestimmten Dienst, wie z.B. LDAP, anbietet."
+            },
+            {
+                question: "128. Wofür steht TTL (Time To Live) im DNS?",
+                answers: [
+                    "Gibt die Zeit an, wie lange eine DNS-Antwort gecacht werden darf.",
+                    "Zeigt die Replikationsdauer im Netzwerk an.",
+                    "Legt die Gültigkeit einer Domain fest.",
+                    "Definiert die Netzwerkgeschwindigkeit."
+                ],
+                correct: ["Gibt die Zeit an, wie lange eine DNS-Antwort gecacht werden darf."],
+                explanation: "TTL bestimmt, wie lange eine DNS-Antwort in einem Cache verbleiben darf, bevor sie erneuert wird."
+            },
+            {
+                question: "129. Was ist eine Forward-Lookup-Zone?",
+                answers: [
+                    "Eine Zone, die Hostnamen in IP-Adressen auflöst.",
+                    "Eine Zone, die IP-Adressen in Hostnamen auflöst.",
+                    "Eine Zone, die nur Mailserver auflöst.",
+                    "Eine Zone, die nur lokale Netzwerke auflöst."
+                ],
+                correct: ["Eine Zone, die Hostnamen in IP-Adressen auflöst."],
+                explanation: "Forward-Lookup-Zonen übersetzen Hostnamen in IP-Adressen, was bei DNS-Anfragen üblich ist."
+            },
+            {
+                question: "130. Was ist eine Reverse-Lookup-Zone?",
+                answers: [
+                    "Eine Zone, die IP-Adressen in Hostnamen auflöst.",
+                    "Eine Zone, die Hostnamen in IP-Adressen auflöst.",
+                    "Eine Zone für Mailserver.",
+                    "Eine Zone nur für lokale Anfragen."
+                ],
+                correct: ["Eine Zone, die IP-Adressen in Hostnamen auflöst."],
+                explanation: "Reverse-Lookup-Zonen sind das Gegenteil von Forward-Lookup-Zonen und wandeln IP-Adressen in Hostnamen um."
+            },
+            {
+                question: "131. Was ist eine Stubzone?",
+                answers: [
+                    "Eine partielle Kopie einer Zone, die nur NS- und A-Records enthält.",
+                    "Eine vollständige Kopie der DNS-Zone.",
+                    "Eine Zone nur für öffentliche Anfragen.",
+                    "Eine Zone ohne autoritative Rechte."
+                ],
+                correct: ["Eine partielle Kopie einer Zone, die nur NS- und A-Records enthält."],
+                explanation: "Stubzonen enthalten nur die notwendigsten Informationen, um Anfragen weiterzuleiten."
+            },
+            {
+                question: "132. Was versteht man unter einer rekursiven DNS-Anfrage?",
+                answers: [
+                    "Eine Anfrage, die von einem Server zum nächsten weitergeleitet wird, bis die Antwort gefunden wird.",
+                    "Eine direkte Antwort auf eine Anfrage.",
+                    "Eine Anfrage nur innerhalb eines lokalen Netzwerks.",
+                    "Eine Anfrage, die nur IP-Adressen auflösen kann."
+                ],
+                correct: ["Eine Anfrage, die von einem Server zum nächsten weitergeleitet wird, bis die Antwort gefunden wird."],
+                explanation: "Bei rekursiven Anfragen wird eine Anfrage an andere DNS-Server weitergeleitet, bis die endgültige Antwort gefunden wird."
+            },
+            {
+                question: "133. Was bedeutet DNSSEC?",
+                answers: [
+                    "Domain Name System Security Extensions",
+                    "Domain Name Standard Extension",
+                    "Dynamic Network Service Enhancement",
+                    "Domain Name Security Controls"
+                ],
+                correct: ["Domain Name System Security Extensions"],
+                explanation: "DNSSEC ist eine Sicherheitsverbesserung, die die Authentizität und Integrität von DNS-Daten gewährleistet."
+            },
+        {
+            question: "134. Was ist der Zweck der DNS-Namensauflösung?",
+            answers: [
+                "Um Hostnamen in IP-Adressen aufzulösen und umgekehrt",
+                "Um IP-Adressen in MAC-Adressen aufzulösen",
+                "Um Servernamen in DNS-Zonen zu speichern",
+                "Um DNS-Protokolle zu überwachen"
+            ],
+            correct: ["Um Hostnamen in IP-Adressen aufzulösen und umgekehrt"],
+            explanation: "Die DNS-Namensauflösung ermöglicht die Übersetzung von Hostnamen in IP-Adressen, was für die Kommunikation im Netzwerk notwendig ist."
+        },
+        {
+            question: "135. Was ist ein vollqualifizierter Domänenname (Fully Qualified Domain Name, FQDN)?",
+            answers: [
+                "Ein vollständiger Name bestehend aus Hostname, Domäne und Top-Level-Domäne",
+                "Ein Name, der nur aus einer Top-Level-Domäne besteht",
+                "Ein zufällig generierter Netzwerkname",
+                "Ein Name, der nur den Hostnamen und die Top-Level-Domäne enthält"
+            ],
+            correct: ["Ein vollständiger Name bestehend aus Hostname, Domäne und Top-Level-Domäne"],
+            explanation: "Ein FQDN wie 'AcctDirPC.adatum.com' kombiniert Hostname, Domäne und Top-Level-Domäne."
+        },
+        {
+            question: "136. Welche Hauptkomponenten gehören zur DNS-Infrastruktur?",
+            answers: [
+                "DNS-Server, DNS-Zonen, DNS-Resolver und Ressourceneinträge",
+                "Router, Firewalls, Hostname und Netzwerke",
+                "FQDN, TLD und SLD",
+                "Nur Netzwerke und Hosts"
+            ],
+            correct: ["DNS-Server, DNS-Zonen, DNS-Resolver und Ressourceneinträge"],
+            explanation: "Die DNS-Infrastruktur umfasst Server, Zonen, Resolver und Ressourceneinträge, die zusammenarbeiten, um Namensauflösungen bereitzustellen."
+        },
+        {
+            question: "137. Was sind DNS-Zonen?",
+            answers: [
+                "Bestimmte Teile des DNS-Namespace, die DNS-Einträge enthalten",
+                "Nur die Top-Level-Domänen des DNS",
+                "Die physischen Standorte der DNS-Server",
+                "Listen von IP-Adressen, die auf einen Hostnamen verweisen"
+            ],
+            correct: ["Bestimmte Teile des DNS-Namespace, die DNS-Einträge enthalten"],
+            explanation: "Eine DNS-Zone ist ein Bereich im DNS-Namespace, der verschiedene DNS-Einträge wie A, MX und NS enthält."
+        },
+        {
+            question: "138. Welche Arten von DNS-Zonen gibt es?",
+            answers: [
+                "Forward-Lookup-Zone und Reverse-Lookup-Zone",
+                "Primary-Zone und Secondary-Zone",
+                "Only-Read-Zone und Write-Zone",
+                "Local-Zone und Global-Zone"
+            ],
+            correct: ["Forward-Lookup-Zone und Reverse-Lookup-Zone"],
+            explanation: "Forward-Lookup-Zonen ordnen Hostnamen IP-Adressen zu, während Reverse-Lookup-Zonen IP-Adressen in Hostnamen auflösen."
+        },
+        {
+            question: "139. Welche Eintragstypen findet man in einer Forward-Lookup-Zone?",
+            answers: [
+                "A, MX, SRV, NS, SOA und CNAME",
+                "PTR, AAAA und TLD",
+                "Only-Read und Write",
+                "SLD, TLD und A-Records"
+            ],
+            correct: ["A, MX, SRV, NS, SOA und CNAME"],
+            explanation: "In einer Forward-Lookup-Zone findet man Einträge wie A, MX, SRV, NS, SOA und CNAME, die für die Namensauflösung zuständig sind."
+        },
+        {
+            question: "140. Welche Rolle spielen primäre und sekundäre DNS-Zonen?",
+            answers: [
+                "Primäre Zonen sind beschreibbar, sekundäre Zonen sind schreibgeschützt",
+                "Sekundäre Zonen verwalten die primären Zonen",
+                "Primäre Zonen können nur gelesen werden",
+                "Sekundäre Zonen sind die Master-Zonen"
+            ],
+            correct: ["Primäre Zonen sind beschreibbar, sekundäre Zonen sind schreibgeschützt"],
+            explanation: "Primäre Zonen enthalten die Originaleinträge und sind beschreibbar, während sekundäre Zonen Kopien für Redundanz und Ausfallsicherheit bieten."
+        },
+        {
+            question: "141. Was ist ein PTR-Eintrag und wofür wird er verwendet?",
+            answers: [
+                "Zur Umkehrung der Namensauflösung von IP zu Hostname",
+                "Zur Bereitstellung eines Alias für einen Host",
+                "Zum Anzeigen der Routingtabelle",
+                "Zum Übersetzen von MAC-Adressen"
+            ],
+            correct: ["Zur Umkehrung der Namensauflösung von IP zu Hostname"],
+            explanation: "PTR-Einträge werden in Reverse-Lookup-Zonen verwendet, um IP-Adressen in Hostnamen aufzulösen."
+        },
+        {
+            question: "142. Was ist DNS-Caching?",
+            answers: [
+                "Das lokale Speichern aufgelöster Namen zur Beschleunigung zukünftiger Anfragen",
+                "Die automatische DNS-Eintragung neuer Hosts",
+                "Das Speichern von MAC-Adressen",
+                "Das Erstellen eines neuen Nameservers"
+            ],
+            correct: ["Das lokale Speichern aufgelöster Namen zur Beschleunigung zukünftiger Anfragen"],
+            explanation: "DNS-Caching speichert kürzlich aufgelöste Namen, um die Geschwindigkeit bei wiederholten Anfragen zu erhöhen."
+        },
+        {
+            question: "143. Was versteht man unter DNS-Weiterleitung?",
+            answers: [
+                "Das Weiterleiten von Anfragen an andere DNS-Server, wenn der lokale Server keine Antwort hat",
+                "Das Löschen aller DNS-Einträge",
+                "Die automatische Erneuerung von DNS-Einträgen",
+                "Die Überwachung von DNS-Servern"
+            ],
+            correct: ["Das Weiterleiten von Anfragen an andere DNS-Server, wenn der lokale Server keine Antwort hat"],
+            explanation: "DNS-Weiterleitung leitet Anfragen an einen anderen DNS-Server weiter, falls der lokale Server die Anfrage nicht auflösen kann."
+        },
+        {
+            question: "144. Was sind SRV-Ressourceneinträge und wie werden sie verwendet?",
+            answers: [
+                "Zur Lokalisierung von Diensten wie LDAP und AD DS",
+                "Zur Bereitstellung eines DNS-Caches",
+                "Zur Konvertierung von MAC-Adressen in IP-Adressen",
+                "Zur Erstellung neuer DNS-Zonen"
+            ],
+            correct: ["Zur Lokalisierung von Diensten wie LDAP und AD DS"],
+            explanation: "SRV-Einträge ermöglichen es, Serverdienste wie LDAP und Active Directory Domain Services in DNS zu lokalisieren."
+        },
+        {
+            question: "145. Was sind Active Directory-integrierte Zonen?",
+            answers: [
+                "Zonen, die in AD DS integriert sind und sichere Updates ermöglichen",
+                "Nur lesbare DNS-Zonen",
+                "Eine Art von dynamischer DHCP-Zuweisung",
+                "Temporäre Speicherorte für DNS-Abfragen"
+            ],
+            correct: ["Zonen, die in AD DS integriert sind und sichere Updates ermöglichen"],
+            explanation: "Active Directory-integrierte Zonen verwenden AD DS zur Replikation und bieten sichere, dynamische Updates."
+        },
+        {
+            question: "146. Was ist die Funktion der GlobalNames-Zone?",
+            answers: [
+                "Ermöglicht die Auflösung von einheitlichen Namen über verschiedene DNS-Domänen hinweg",
+                "Erstellt dynamisch IP-Adressen für neue Hosts",
+                "Speichert CNAME-Einträge nur für lokale Netzwerke",
+                "Nur zur Konfiguration von internen Hostnamen"
+            ],
+            correct: ["Ermöglicht die Auflösung von einheitlichen Namen über verschiedene DNS-Domänen hinweg"],
+            explanation: "Die GlobalNames-Zone ermöglicht die Auflösung von einheitlichen Namen in Umgebungen mit mehreren DNS-Domänen."
+        },
+        {
+            question: "147. Was bedeutet DNSSEC?",
+            answers: [
+                "Ein Sicherheitsprotokoll, das die Authentizität von DNS-Daten sicherstellt",
+                "Ein Standard zum Verwalten von DHCP-Einträgen",
+                "Eine Methode zur dynamischen DNS-Aktualisierung",
+                "Ein Tool zur IP-Adresszuweisung"
+            ],
+            correct: ["Ein Sicherheitsprotokoll, das die Authentizität von DNS-Daten sicherstellt"],
+            explanation: "DNSSEC stellt die Authentizität und Integrität von DNS-Daten sicher, indem es digitale Signaturen für DNS-Zonen verwendet."
+        },
+        {
+            question: "148. Wie kann DNS auf einem Nano-Server implementiert werden?",
+            answers: [
+                "Durch das Installieren eines speziellen NanoServer-DNS-Pakets",
+                "Durch den Start des DNS-Managers auf dem Server",
+                "Durch das Konfigurieren von DNS im BIOS",
+                "Durch manuelles Hinzufügen von DNS-Cache"
+            ],
+            correct: ["Durch das Installieren eines speziellen NanoServer-DNS-Pakets"],
+            explanation: "Um DNS auf einem Nano-Server zu implementieren, muss das NanoServer-DNS-Paket installiert und über Hyper-V konfiguriert werden."
+        },
+        {
+            question: "149. Wofür steht DHCP?",
+            answers: [
+                "Dynamic Host Configuration Protocol",
+                "Domain Host Configuration Protocol",
+                "Direct Host Communication Protocol",
+                "Dynamic Hardware Configuration Protocol"
+            ],
+            correct: ["Dynamic Host Configuration Protocol"],
+            explanation: "DHCP steht für Dynamic Host Configuration Protocol und automatisiert die Zuweisung von IP-Adressen an Netzwerkgeräte."
+        },
+        {
+            question: "150. Was ist der Hauptvorteil der Verwendung von DHCP?",
+            answers: [
+                "Automatische IP-Konfiguration reduziert den administrativen Aufwand.",
+                "Es bietet höhere Sicherheit.",
+                "Es erhöht die Bandbreite.",
+                "Es verhindert DNS-Konflikte."
+            ],
+            correct: ["Automatische IP-Konfiguration reduziert den administrativen Aufwand."],
+            explanation: "DHCP vereinfacht die Netzwerkverwaltung, indem es automatisch IP-Adressen und andere Netzwerkeinstellungen an Clients zuweist."
+        },
+        
+        // Questions on DHCP Lease Process
+        {
+            question: "151. Wie funktioniert der DHCP-Lease-Prozess?",
+            answers: [
+                "Der Client sendet ein DHCPDISCOVER, der Server antwortet mit einem DHCPOFFER.",
+                "Der Server sendet ein DHCPREQUEST und der Client antwortet mit einem DHCPACK.",
+                "Der Client sendet ein DHCPACK, der Server antwortet mit einem DHCPDISCOVER.",
+                "Der Client sendet ein DHCPOFFER, der Server antwortet mit einem DHCPREQUEST."
+            ],
+            correct: ["Der Client sendet ein DHCPDISCOVER, der Server antwortet mit einem DHCPOFFER."],
+            explanation: "Im Lease-Prozess sendet der Client ein DHCPDISCOVER, woraufhin der Server ein DHCPOFFER sendet. Der Client bestätigt mit DHCPREQUEST, und der Server finalisiert mit DHCPACK."
+        },
+        {
+            question: "151. Wann beginnt der DHCP-Leaseerneuerungsprozess?",
+            answers: [
+                "Nach 50% der Leasedauer.",
+                "Nach 100% der Leasedauer.",
+                "Nach 75% der Leasedauer.",
+                "Nach 25% der Leasedauer."
+            ],
+            correct: ["Nach 50% der Leasedauer."],
+            explanation: "Der Client versucht die Lease nach 50% der Leasedauer zu erneuern. Wenn dies fehlschlägt, versucht er es erneut bei 87,5%."
+        },
+        
+        // Questions on DHCP Server Installation and Configuration
+        {
+            question: "152. Welche Schritte sind für die Installation der DHCP-Serverrolle erforderlich?",
+            answers: [
+                "Rollen- und Feature-Assistenten verwenden oder PowerShell-Befehl 'Add-WindowsFeature DHCP'.",
+                "Den DNS-Server installieren.",
+                "Firewall deaktivieren und Router konfigurieren.",
+                "DHCP-Dienst manuell starten."
+            ],
+            correct: ["Rollen- und Feature-Assistenten verwenden oder PowerShell-Befehl 'Add-WindowsFeature DHCP'."],
+            explanation: "Die DHCP-Serverrolle kann mit dem Assistenten im Server-Manager oder PowerShell installiert werden. Der Server benötigt eine statische IP-Adresse."
+        },
+        {
+            question: "153. Was ist die Aufgabe der DHCP-Serverautorisierung?",
+            answers: [
+                "Sie erlaubt DHCP-Servern IP-Adressen in einer AD-Umgebung bereitzustellen.",
+                "Sie erhöht die Geschwindigkeit des Netzwerks.",
+                "Sie erstellt Benutzergruppen.",
+                "Sie ermöglicht DNS-Anfragen."
+            ],
+            correct: ["Sie erlaubt DHCP-Servern IP-Adressen in einer AD-Umgebung bereitzustellen."],
+            explanation: "Die Autorisierung in Active Directory verhindert, dass nicht autorisierte Server IP-Adressen vergeben."
+        },
+    
+        // Questions on DHCP Options and Configuration
+        {
+            question: "154. Welche Informationen kann ein DHCP-Bereich enthalten?",
+            answers: [
+                "IP-Adressenbereich, Subnetzmaske, Leasedauer, Gateway und DNS-Server.",
+                "Nur IP-Adressen und Subnetzmaske.",
+                "MAC-Adressen der verbundenen Geräte.",
+                "Passwörter und Benutzerrechte."
+            ],
+            correct: ["IP-Adressenbereich, Subnetzmaske, Leasedauer, Gateway und DNS-Server."],
+            explanation: "Ein DHCP-Bereich umfasst Konfigurationsdaten wie IP-Bereich, Subnetzmaske, Lease-Dauer und zusätzliche Netzwerkeinstellungen."
+        },
+        {
+            question: "155. Was sind DHCP-Optionen?",
+            answers: [
+                "Werte für häufig verwendete Konfigurationsdaten wie Gateway und DNS.",
+                "Sicherheitsprotokolle.",
+                "Einstellungen für die Internetgeschwindigkeit.",
+                "Einstellungen für Bandbreitenmanagement."
+            ],
+            correct: ["Werte für häufig verwendete Konfigurationsdaten wie Gateway und DNS."],
+            explanation: "DHCP-Optionen bieten flexible Konfigurationsdaten und können auf verschiedenen Ebenen wie Server, Bereich und Reservierung festgelegt werden."
+        },
+        {
+            question: "156. Was ist ein DHCP-Relay-Agent?",
+            answers: [
+                "Ein Agent, der DHCP-Broadcasts über Subnetze weiterleitet.",
+                "Ein Server, der DHCP-Optionen speichert.",
+                "Ein Tool zur Serververwaltung.",
+                "Ein Protokoll zur Bandbreitenkontrolle."
+            ],
+            correct: ["Ein Agent, der DHCP-Broadcasts über Subnetze weiterleitet."],
+            explanation: "Ein DHCP-Relay-Agent leitet DHCP-Anfragen von Clients in verschiedenen Subnetzen an DHCP-Server weiter."
+        },
+    
+        // Questions on DHCP High Availability and Failover
+        {
+            question: "157. Was ist DHCP-Failover?",
+            answers: [
+                "Eine Methode, um IP-Adressen von zwei DHCP-Servern bereitzustellen.",
+                "Ein Tool zur Überwachung der Netzwerkgeschwindigkeit.",
+                "Ein Verfahren zur Überprüfung der IP-Adressen.",
+                "Ein Programm zur Fehlerbehebung im Netzwerk."
+            ],
+            correct: ["Eine Methode, um IP-Adressen von zwei DHCP-Servern bereitzustellen."],
+            explanation: "Mit DHCP-Failover können zwei Server IP-Adressen bereitstellen und so eine höhere Ausfallsicherheit im Netzwerk gewährleisten."
+        },
+        {
+            question: "158. Welche Failover-Modi unterstützt DHCP?",
+            answers: [
+                "Hot-Standby und Lastverteilung.",
+                "Synchronisation und Redundanz.",
+                "Backup und Restore.",
+                "NAT und PAT."
+            ],
+            correct: ["Hot-Standby und Lastverteilung."],
+            explanation: "Der Hot-Standby-Modus ermöglicht die Übernahme durch einen zweiten Server, während Lastverteilung die IP-Bereitstellung teilt."
+        },
+    
+        // Questions on DHCP Database and Migration
+        {
+            question: "159. Was speichert die DHCP-Datenbank?",
+            answers: [
+                "Informationen zu Bereichen, Leases, Reservierungen und Konfigurationen.",
+                "Nutzerdaten und Passwörter.",
+                "Verbindungsprotokolle.",
+                "Firewall-Einstellungen."
+            ],
+            correct: ["Informationen zu Bereichen, Leases, Reservierungen und Konfigurationen."],
+            explanation: "Die DHCP-Datenbank enthält alle wichtigen Informationen zur DHCP-Konfiguration und zu Lease-Zuweisungen."
+        },
+        {
+            question: "160. Wie kann die DHCP-Datenbank migriert werden?",
+            answers: [
+                "Export der Daten auf dem alten Server und Import auf dem neuen Server.",
+                "Durch die Deinstallation und Neuinstallation des Dienstes.",
+                "Durch Kopieren des gesamten Systemverzeichnisses.",
+                "Durch Neustarten des Netzwerks."
+            ],
+            correct: ["Export der Daten auf dem alten Server und Import auf dem neuen Server."],
+            explanation: "Die Migration erfolgt durch Export der DHCP-Daten vom alten Server und Import der Daten auf dem neuen Server."
+        },
+    
+        // Questions on DHCP Security Options
+        {
+            question: "161. Was sind DHCP-Sicherheitsoptionen?",
+            answers: [
+                "Maßnahmen wie Netzwerkzugriffsbeschränkungen und DHCP-Überwachung.",
+                "Einstellungen für höhere Bandbreite.",
+                "Optionen zur Beschleunigung der DHCP-Antwortzeit.",
+                "Optionen zur Erhöhung der Verbindungszahl."
+            ],
+            correct: ["Maßnahmen wie Netzwerkzugriffsbeschränkungen und DHCP-Überwachung."],
+            explanation: "DHCP-Sicherheitsoptionen verhindern unbefugten Zugriff und schützen die Integrität des Netzwerks."
+        },
+        {
+            question: "161. Was ist der DHCP-Namensschutz?",
+            answers: [
+                "Schützt die DNS-Namensregistrierung von Windows-Clients.",
+                "Verhindert Änderungen an IP-Adressen.",
+                "Blockiert den Zugang zu bestimmten Websites.",
+                "Erhöht die Netzwerksicherheit durch Passwortschutz."
+            ],
+            correct: ["Schützt die DNS-Namensregistrierung von Windows-Clients."],
+            explanation: "Der DHCP-Namensschutz verhindert, dass Nicht-Windows-Geräte die DNS-Registrierungen von Windows-Geräten überschreiben."
+        },
+    
+        // Questions on DHCP Advanced Options
+        {
+            question: "162. Welche Zuweisungskriterien gibt es für richtlinienbasierte DHCP-Zuweisungen?",
+            answers: [
+                "Herstellerklasse, Benutzerklasse, MAC-Adresse, FQDN, Relay-Agent-Informationen",
+                "IP-Adresse und Subnetzmaske",
+                "Betriebssystemtyp und Prozessorgeschwindigkeit",
+                "Anzahl der Verbindungen"
+            ],
+            correct: ["Herstellerklasse, Benutzerklasse, MAC-Adresse, FQDN, Relay-Agent-Informationen"],
+            explanation: "Richtlinienbasierte Zuweisungen ermöglichen es, IP-Adressen je nach Gerätetyp, Benutzer oder Standort zu vergeben."
+        },
+        {
+            question: "163. Was ist ein DHCP-Bereich?",
+            answers: [
+                "Eine Gruppe von IP-Adressen, die an Clients vergeben werden können.",
+                "Ein isolierter Netzwerkabschnitt.",
+                "Ein spezifisches Subnetz für DNS-Anfragen.",
+                "Ein virtueller Bereich für Testzwecke."
+            ],
+            correct: ["Eine Gruppe von IP-Adressen, die an Clients vergeben werden können."],
+            explanation: "Ein DHCP-Bereich definiert den IP-Adressenbereich, der an Clients innerhalb eines bestimmten Netzwerks vergeben werden kann."
+        },
+        {
+            question: "164. Warum ist eine statische IP-Adresse für den DHCP-Server wichtig?",
+            answers: [
+                "Damit der DHCP-Server immer über eine konstante Adresse erreichbar ist.",
+                "Weil sie die Serverleistung verbessert.",
+                "Weil sie die Bandbreite erhöht.",
+                "Weil sie die DNS-Abfragen beschleunigt."
+            ],
+            correct: ["Damit der DHCP-Server immer über eine konstante Adresse erreichbar ist."],
+            explanation: "Eine statische IP-Adresse stellt sicher, dass der DHCP-Server für alle Clients zuverlässig erreichbar ist."
+        },
 
         ],
 
