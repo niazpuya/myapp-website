@@ -147,18 +147,7 @@ const questionsByCategory =
                 correct: ["Pakete werden direkt nach Empfang der Zieladresse weitergeleitet."],
                 explanation: "Beim Cut-Through-Switching werden Pakete sofort weitergeleitet, sobald die Zieladresse empfangen wurde, was die Latenzzeit minimiert."
             },
-            {
-                question: "14. Was bedeutet eine Broadcast-Domäne im Netzwerk?",
-                answers: [
-                    "Alle Geräte in dieser Domäne empfangen Broadcast-Nachrichten.",
-                    "Alle Geräte in dieser Domäne sind in Kollisionsdomänen.",
-                    "Broadcast-Nachrichten werden nur zwischen Routern gesendet.",
-                    "Geräte in einer Broadcast-Domäne sind auf VLANs beschränkt."
-                ],
-                correct: ["Alle Geräte in dieser Domäne empfangen Broadcast-Nachrichten."],
-                explanation: "Eine Broadcast-Domäne ist der Bereich, in dem alle Geräte Broadcast-Nachrichten empfangen."
-            },
-
+            
 
 
             // More questions can be added here...
@@ -266,7 +255,7 @@ const questionsByCategory =
                 explanation: "Telnet kann eine Verbindung zu einem spezifischen Server und Port herstellen, um zu prüfen, ob dieser erreichbar ist."
             },
             {
-                question: "10. Wofür wird das Tool Ressourcenmonitor verwendet?",
+                question: "10. Wofür wird das Tool Ressourcenmonitor <resmon> verwendet?",
                 answers: [
                     "Zum Anzeigen der CPU-Auslastung.",
                     "Zum Überwachen der Netzwerkbandbreite.",
@@ -274,10 +263,10 @@ const questionsByCategory =
                     "Zum Überprüfen von Dateiänderungen."
                 ],
                 correct: ["Zum Überprüfen der TCP- oder UDP-Ports."],
-                explanation: "Der Ressourcenmonitor kann anzeigen, welche Programme auf bestimmte TCP- oder UDP-Ports zugreifen, und bietet Echtzeit-Überwachung."
+                explanation: "Der Ressourcenmonitor <resmon> kann anzeigen, welche Programme auf bestimmte TCP- oder UDP-Ports zugreifen, und bietet Echtzeit-Überwachung."
             },
             {
-                question: "11. Welche Informationen finden Sie in der Ereignisanzeige?",
+                question: "11. Welche Informationen finden Sie in der Ereignisanzeige <eventviewer>?",
                 answers: [
                     "Eine Liste aller Netzwerkgeräte.",
                     "Eine Liste der offenen TCP-Ports.",
@@ -285,7 +274,7 @@ const questionsByCategory =
                     "Informationen über die IP-Adresse eines Routers."
                 ],
                 correct: ["Aufzeichnungen wichtiger Systemereignisse und Fehler."],
-                explanation: "Die Ereignisanzeige protokolliert Systemereignisse und Fehler, die bei der Diagnose und Fehlerbehebung helfen."
+                explanation: "Die Ereignisanzeige <eventviewer> protokolliert Systemereignisse und Fehler, die bei der Diagnose und Fehlerbehebung helfen."
             },
             {
                 question: "12. Welchen Zweck hat das Windows-Netzwerkdiagnosetool?",
@@ -471,12 +460,12 @@ const questionsByCategory =
             {
                 question: "3. Welche Schicht des OSI-Modells ist für die Datenverschlüsselung zuständig?",
                 answers: [
-                    "Darstellungsschicht (Schicht 6)",
-                    "Transportschicht (Schicht 4)",
-                    "Anwendungsschicht (Schicht 7)",
-                    "Sicherungsschicht (Schicht 2)"
+                    "Darstellungsschicht <Presentation Layer> (Schicht 6)",
+                    "Transportschicht <Transport Layer> (Schicht 4)",
+                    "Anwendungsschicht <Application Layer> (Schicht 7)",
+                    "Sicherungsschicht <Data Link Layer> (Schicht 2)"
                 ],
-                correct: ["Darstellungsschicht (Schicht 6)"],
+                correct: ["Darstellungsschicht <Presentation Layer> (Schicht 6)"],
                 explanation: "Die Darstellungsschicht ist für die Datenverschlüsselung und die Konvertierung von Daten in ein für die Anwendung verständliches Format verantwortlich."
             },
             {
@@ -493,12 +482,12 @@ const questionsByCategory =
             {
                 question: "5. Was ist der Unterschied zwischen RAID 5 und RAID 6?",
                 answers: [
-                    "RAID 6 nutzt doppelte Parität und kann den Ausfall von zwei Festplatten verkraften",
+                    "RAID 6 nutzt doppelte Parität und kann den Ausfall von zwei Festplatten verkraften während RAID 5 nur einen Festplattenausfall tolerieren kann",
                     "RAID 6 verwendet keine Parität, sondern vollständige Kopien",
                     "RAID 5 ist schneller als RAID 6 bei Schreiboperationen",
                     "RAID 6 kann keine Daten wiederherstellen, wenn eine Festplatte ausfällt"
                 ],
-                correct: ["RAID 6 nutzt doppelte Parität und kann den Ausfall von zwei Festplatten verkraften"],
+                correct: ["RAID 6 nutzt doppelte Parität und kann den Ausfall von zwei Festplatten verkraften während RAID 5 nur einen Festplattenausfall tolerieren kann"],
                 explanation: "RAID 6 verwendet doppelte Paritätsblöcke, was es ermöglicht, den Ausfall von zwei Festplatten zu überstehen, während RAID 5 nur einen Festplattenausfall tolerieren kann."
             },
             {
@@ -513,7 +502,7 @@ const questionsByCategory =
                 explanation: "XOR wird in RAID 5 verwendet, um Paritätsdaten zu berechnen, die zur Wiederherstellung fehlender Informationen verwendet werden können."
             },
             {
-                question: "7. Welche Aufgaben erfüllt die Sicherungsschicht (Schicht 2) des OSI-Modells?",
+                question: "7. Welche Aufgaben erfüllt die Sicherungsschicht <Data link Layer> (Schicht 2) des OSI-Modells?",
                 answers: [
                     "Sie stellt die End-to-End-Verbindung her.",
                     "Sie verschlüsselt die Daten.",
@@ -542,7 +531,7 @@ const questionsByCategory =
                     "RAID 5 kann zwei Festplattenausfälle verkraften.",
                     "RAID 5 hat eine bessere Schreibperformance als RAID 6."
                 ],
-                correct: ["RAID 6 verwendet eine doppelte Parität und toleriert den Ausfall von zwei Festplatten."],
+                correct: ["RAID 6 verwendet eine doppelte Parität und toleriert den Ausfall von zwei Festplatten während RAID 5 nur einen Festplattenausfall toleriert."],
                 explanation: "RAID 6 kann durch die doppelte Parität den Ausfall von zwei Festplatten verkraften, während RAID 5 nur einen Festplattenausfall toleriert."
             },
             {
@@ -579,18 +568,7 @@ const questionsByCategory =
                 explanation: "RAID 5 verwendet den XOR-Operator, um die Paritätsinformationen zur Fehlerkorrektur zu berechnen."
             },
             {
-                question: "13. Wie wird die Parität in RAID 5 berechnet?",
-                answers: [
-                    "Mit Hilfe des XOR-Operators.",
-                    "Durch das Spiegeln der Daten.",
-                    "Durch das Komprimieren der Daten.",
-                    "Durch die Aufteilung in Blöcke."
-                ],
-                correct: ["Mit Hilfe des XOR-Operators."],
-                explanation: "RAID 5 verwendet den XOR-Operator, um die Paritätsinformationen zur Fehlerkorrektur zu berechnen."
-            },
-            {
-                question: "14. Was beschreibt die Schicht 3 (Vermittlungsschicht) im OSI-Modell?",
+                question: "14. Was beschreibt die Schicht 3 (Vermittlungsschicht <Network Layer>) im OSI-Modell?",
                 answers: [
                     "Sie ist für das Routing von Datenpaketen verantwortlich.",
                     "Sie übersetzt die Daten in ein lesbares Format.",
@@ -598,7 +576,7 @@ const questionsByCategory =
                     "Sie steuert den Zugriff auf physische Netzwerke."
                 ],
                 correct: ["Sie ist für das Routing von Datenpaketen verantwortlich."],
-                explanation: "Die Vermittlungsschicht (Schicht 3) ist verantwortlich für das Routing von Datenpaketen über verschiedene Netzwerke."
+                explanation: "Die Vermittlungsschicht <Network Layer> (Schicht 3) ist verantwortlich für das Routing von Datenpaketen über verschiedene Netzwerke."
             },
             {
                 question: "15. Welche Funktion erfüllt die Root-Bridge im Spanning-Tree-Algorithmus?",
@@ -656,7 +634,7 @@ const questionsByCategory =
                 explanation: "Die Anwendungsschicht (Schicht 7) stellt Dienste für die Anwendungen bereit, wie den Dateizugriff und die Kommunikation über das Netzwerk."
             },
             {
-                question: "20. Welche Aufgabe übernimmt die Darstellungs-Schicht (Schicht 6)?",
+                question: "20. Welche Aufgabe übernimmt die Darstellungs-Schicht <Presentation Layer> (Schicht 6)?",
                 answers: [
                     "Codierung und Decodierung der Daten",
                     "Steuerung des Datenflusses",
@@ -664,10 +642,10 @@ const questionsByCategory =
                     "Fehlerkorrektur"
                 ],
                 correct: ["Codierung und Decodierung der Daten"],
-                explanation: "Die Darstellungs-Schicht (Schicht 6) kümmert sich um die Codierung/Decodierung und Formatierung der Daten, um eine einheitliche Darstellung zu gewährleisten."
+                explanation: "Die Darstellungs-Schicht <Presentation Layer> (Schicht 6) kümmert sich um die Codierung/Decodierung und Formatierung der Daten, um eine einheitliche Darstellung zu gewährleisten z.B:(ASCII, EBCDIC."
             },
             {
-                question: "21. Welche Funktion hat die Sitzungsschicht (Schicht 5)?",
+                question: "21. Welche Funktion hat die Sitzungsschicht <Session Layer>(Schicht 5)?",
                 answers: [
                     "Steuert den Aufbau und die Beendigung der Verbindung",
                     "Verschlüsselt die Daten",
@@ -675,10 +653,10 @@ const questionsByCategory =
                     "Stellt eine Schnittstelle zum Anwenderprogramm bereit"
                 ],
                 correct: ["Steuert den Aufbau und die Beendigung der Verbindung"],
-                explanation: "Die Sitzungsschicht (Schicht 5) sorgt für den kontrollierten Aufbau, die Durchführung und die Beendigung von Kommunikationsverbindungen."
+                explanation: "Die Sitzungsschicht <Session Layer> (Schicht 5) sorgt für den kontrollierten Aufbau, die Durchführung und die Beendigung von Kommunikationsverbindungen."
             },
             {
-                question: "22. Welche Aufgabe hat die Transportschicht (Schicht 4)?",
+                question: "22. Welche Aufgabe hat die Transportschicht <Transport Layer> (Schicht 4)?",
                 answers: [
                     "Transportiert die Daten zwischen zwei Partnern",
                     "Legt das Format der Daten fest",
@@ -686,10 +664,10 @@ const questionsByCategory =
                     "Verwaltet Benutzerzugriffsrechte"
                 ],
                 correct: ["Transportiert die Daten zwischen zwei Partnern"],
-                explanation: "Die Transportschicht (Schicht 4) stellt sicher, dass Daten korrekt und vollständig zwischen Sender und Empfänger transportiert werden."
+                explanation: "Die Transportschicht <Transport Layer> (Schicht 4) stellt sicher, dass Daten korrekt und vollständig zwischen Sender und Empfänger transportiert werden."
             },
             {
-                question: "23. Was ist die Hauptaufgabe der Vermittlungsschicht (Schicht 3)?",
+                question: "23. Was ist die Hauptaufgabe der Vermittlungsschicht <Network Layer> (Schicht 3)?",
                 answers: [
                     "Fehlererkennung und -korrektur",
                     "Auswahl der Datenwege (Routing)",
@@ -697,10 +675,10 @@ const questionsByCategory =
                     "Steuerung des physikalischen Datenzugriffs"
                 ],
                 correct: ["Auswahl der Datenwege (Routing)"],
-                explanation: "Die Vermittlungsschicht (Schicht 3) kümmert sich um das Routing, also die Auswahl der besten Pfade für Datenpakete im Netzwerk."
+                explanation: "Die Vermittlungsschicht <Network Layer> (Schicht 3) kümmert sich um das Routing, also die Auswahl der besten Pfade für Datenpakete im Netzwerk."
             },
             {
-                question: "24. Welche Funktion hat die Sicherungsschicht (Schicht 2)?",
+                question: "24. Welche Funktion hat die Sicherungsschicht <Data link Layer> (Schicht 2)?",
                 answers: [
                     "Bereitstellung von Dateizugriffsrechten",
                     "Fehlererkennung und -korrektur für Datenrahmen",
@@ -708,10 +686,10 @@ const questionsByCategory =
                     "Codierung der Daten in ASCII oder EBCDIC"
                 ],
                 correct: ["Fehlererkennung und -korrektur für Datenrahmen"],
-                explanation: "Die Sicherungsschicht (Schicht 2) sorgt für die korrekte Übertragung der Datenrahmen und behebt Übertragungsfehler."
+                explanation: "Die Sicherungsschicht <Data Link Layer> (Schicht 2) sorgt für die korrekte Übertragung der Datenrahmen und behebt Übertragungsfehler."
             },
             {
-                question: "25. Was macht die Bitübertragungsschicht (Schicht 1)?",
+                question: "25. Was macht die Bitübertragungsschicht <Physical Layer> (Schicht 1)?",
                 answers: [
                     "Sie definiert elektrische und mechanische Übertragungsstandards",
                     "Sie sorgt für die Benutzerverwaltung",
@@ -719,7 +697,7 @@ const questionsByCategory =
                     "Sie steuert die Datencodierung in ASCII oder EBCDIC"
                 ],
                 correct: ["Sie definiert elektrische und mechanische Übertragungsstandards"],
-                explanation: "Die Bitübertragungsschicht (Schicht 1) legt die physikalischen Parameter fest, wie die Übertragungsrate und die Art der Verbindung."
+                explanation: "Die Bitübertragungsschicht <Physical Layer>(Schicht 1) legt die physikalischen Parameter fest, wie die Übertragungsrate und die Art der Verbindung."
             },
             {
                 question: "26. Was ist der Unterschied zwischen paketvermittelten und leitungsvermittelten Netzen?",
@@ -785,7 +763,7 @@ const questionsByCategory =
                     "Er verbindet Geräte auf Layer 1"
                 ],
                 correct: ["Er arbeitet auf Layer 3 und leitet Pakete anhand der Zieladresse weiter"],
-                explanation: "Ein Router arbeitet auf Layer 3 und bestimmt den besten Weg für ein Datenpaket basierend auf dessen Ziel-IP-Adresse."
+                explanation: "Ein Router arbeitet auf Layer 3 Vermittlungsschicht <Network Layer> und bestimmt den besten Weg für ein Datenpaket basierend auf dessen Ziel-IP-Adresse."
             },
             {
                 question: "32. Welche Faktoren können die Wahl einer Route beeinflussen?",
@@ -1041,17 +1019,6 @@ const questionsByCategory =
                 explanation: "Ein Hub arbeitet als Repeater auf Layer 1 und sendet eingehende Daten an alle angeschlossenen Geräte, unabhängig vom Empfänger."
             },
             {
-                question: "55. Was ist eine Broadcastdomäne?",
-                answers: [
-                    "Ein Bereich, in dem Daten an alle Geräte gesendet werden",
-                    "Ein Bereich ohne Kollisionen",
-                    "Ein geschlossener Netzwerkbereich ohne Router",
-                    "Ein Bereich, der nur Switche enthält"
-                ],
-                correct: ["Ein Bereich, in dem Daten an alle Geräte gesendet werden"],
-                explanation: "In einer Broadcastdomäne werden Datenpakete an alle Geräte innerhalb des Netzwerkbereichs gesendet."
-            },
-            {
                 question: "56. Warum wird das IP-Protokoll als 'routingfähig' bezeichnet?",
                 answers: [
                     "Weil es den Transport auf der Bitübertragungsschicht unterstützt",
@@ -1159,7 +1126,7 @@ const questionsByCategory =
                     "Segment Transfer Units (STUs)"
                 ],
                 correct: ["Bridge Protocol Data Units (BPDUs)"],
-                explanation: "Bridges nutzen BPDUs, um sich gegenseitig zu erkennen und den Spanning Tree Algorithmus zu koordinieren."
+                explanation: "Bridges nutzen BPDUs (Bridge Protocol Data Units), um sich gegenseitig zu erkennen und den Spanning Tree Algorithmus zu koordinieren."
             },
             {
                 question: "66. Welche Bedeutung hat die Root-Bridge in einem Netzwerk?",
@@ -1214,7 +1181,7 @@ const questionsByCategory =
                     "Ein Router-Ersatz für Punkt-zu-Punkt-Verbindungen"
                 ],
                 correct: ["Eine Kombination aus Layer-2-Switching und Layer-3-Routing"],
-                explanation: "Layer-3-Switching kombiniert schnelles Layer-2-Switching mit der Routing-Funktionalität von Layer 3, was besonders in IP-Netzen vorteilhaft ist."
+                explanation: "Layer-3-Switching kombiniert schnelles Layer-2-Switching mit der Routing-Funktionalität von Layer 3, was besonders in IP-Netzen vorteilhaft ist oder Multifunktions-Switch."
             },
             {
                 question: "71. Wie funktioniert ein Layer-3-Switch bei der Weiterleitung von IP-Paketen?",
@@ -1228,7 +1195,7 @@ const questionsByCategory =
                 explanation: "Ein Layer-3-Switch analysiert das erste IP-Paket zwischen zwei Stationen und kann danach die Kommunikation auf Basis der MAC-Adresse fortsetzen."
             },
             {
-                question: "72. Was passiert bei einer hohen Anzahl an CRC-Fehlern in einem Switch?",
+                question: "72. Was passiert bei einer hohen Anzahl an CRC-Fehlern (Cyclic Redundancy Check) in einem Switch?",
                 answers: [
                     "Der Switch schaltet automatisch von Cut-Through auf Store-and-Forward um",
                     "Der Switch schaltet automatisch ab",
@@ -1432,7 +1399,7 @@ const questionsByCategory =
                 explanation: "Das indische Stellenwertsystem führte die Null als Platzhalter ein, was die Grundlage für moderne Mathematik und große Berechnungen bildete."
             },
             {
-                question: "17. Was sind LSB und MSB in der Informatik?",
+                question: "17. Was sind LSB (Least Significant Bit) und MSB (Most Significant Bit) in der Informatik?",
                 answers: [
                     "Die am wenigsten und am meisten signifikanten Bits in einem Byte",
                     "Ein Dateisystem und eine Speichermethode",
@@ -1872,10 +1839,10 @@ const questionsByCategory =
             {
                 question: "1. Welches Protokoll wird für die Dateiverwaltung im Netzwerk verwendet?",
                 answers: [
-                    "HTTP",
-                    "FTP",
-                    "SMTP",
-                    "DNS"
+                    "HTTP: HyperText Transfer Protocol",
+                    "FTP: File Transfer Protocol",
+                    "SMTP:Simple Mail Transfer Protocol",
+                    "DNS :Domain Name System"
                 ],
                 correct: ["FTP"],
                 explanation: "FTP (File Transfer Protocol) wird verwendet, um Dateien über das Netzwerk zu übertragen und zu verwalten."
@@ -1883,10 +1850,10 @@ const questionsByCategory =
             {
                 question: "2. Welches Protokoll dient der IP-Adressauflösung im Netzwerk?",
                 answers: [
-                    "ARP",
-                    "DNS",
-                    "ICMP",
-                    "SMTP"
+                    "ARP:Address Resolution Protocol",
+                    "DNS: Domain Name System",
+                    "ICMP :Internet Control Message Protocol",
+                    "SMTP :Simple Mail Transfer Protocol"
                 ],
                 correct: ["DNS"],
                 explanation: "Das DNS (Domain Name System) wandelt Domain-Namen in IP-Adressen um, sodass Computer im Netzwerk sie verstehen können."
@@ -1905,10 +1872,10 @@ const questionsByCategory =
             {
                 question: "4. Welches Protokoll wird zur Fehlerkontrolle und Netzwerkdiagnose verwendet?",
                 answers: [
-                    "TCP",
-                    "ICMP",
-                    "FTP",
-                    "RIP"
+                    "TCP: Transmission Control Protocol",
+                    "ICMP : Internet Control Message Protocol",
+                    "FTP : File Transfer Protocol",
+                    "RIP : Routing Information Protocol"
                 ],
                 correct: ["ICMP"],
                 explanation: "Das ICMP (Internet Control Message Protocol) dient zur Netzwerkdiagnose und Fehlerkontrolle, z.B. durch Ping-Anfragen."
@@ -1938,12 +1905,12 @@ const questionsByCategory =
             {
                 question: "7. Welches Protokoll bietet Routing-Informationen im Netzwerk?",
                 answers: [
-                    "ICMP",
-                    "RIP",
-                    "FTP",
+                    "ICMP: Internet Control Message Protocol",
+                    "RIP :  Routing Information Protocol",
+                    "FTP : File Transfer Protocol",
                     "ARP"
                 ],
-                correct: ["RIP"],
+                correct: ["RIP: Address Resolution Protocol"],
                 explanation: "Das RIP (Routing Information Protocol) verteilt Routing-Informationen, um Datenpakete im Netzwerk zu leiten."
             },
             {
@@ -1960,78 +1927,78 @@ const questionsByCategory =
             {
                 question: "9. Welches Protokoll dient der Adressauflösung in lokalen Netzwerken?",
                 answers: [
-                    "DNS",
-                    "ARP",
-                    "FTP",
-                    "SMTP"
+                    "DNS: Domain Name System",
+                    "ARP: Address Resolution Protocol",
+                    "FTP: File Transfer Protocol",
+                    "SMTP: Simple Mail Transfer Protocol"
                 ],
-                correct: ["ARP"],
+                correct: ["ARP: Address Resolution Protocol"],
                 explanation: "ARP (Address Resolution Protocol) wird verwendet, um IP-Adressen in MAC-Adressen für lokale Netzwerke aufzulösen."
             },
             {
                 question: "10. Welches Protokoll wird zur Verschlüsselung und Authentifizierung beim Zugriff auf Netzwerke verwendet?",
                 answers: [
-                    "TACACS+",
-                    "FTP",
-                    "SMTP",
-                    "HTTP"
+                    "TACACS+: Terminal Access Controller Access Control System Plus",
+                    "FTP: File Transfer Protocol",
+                    "SMTP: Simple Mail Transfer Protocol",
+                    "HTTP: HyperText Transfer Protocol "
                 ],
-                correct: ["TACACS+"],
+                correct: ["TACACS+: Terminal Access Controller Access Control System Plus"],
                 explanation: "TACACS+ ist ein Protokoll für Authentifizierung und Verschlüsselung, das beim Netzwerkzugriff verwendet wird."
             },
             {
                 question: "11. Welches Protokoll ermöglicht die Namensauflösung und Verwaltung von IP-Adressen in einem Netzwerk?",
                 answers: [
-                    "SMTP",
-                    "NIS",
-                    "DNS",
-                    "HTTP"
+                    "SMTP:Simple Mail Transfer Protocol",
+                    "NIS: Network Information Service",
+                    "DNS: Domain Name System",
+                    "HTTP: HyperText Transfer Protocol"
                 ],
-                correct: ["DNS"],
+                correct: ["DNS: Domain Name System"],
                 explanation: "DNS ermöglicht die Auflösung von Domänennamen in IP-Adressen und ist essenziell für die Navigation im Netzwerk."
             },
             {
                 question: "12. Welches Protokoll wird zur dynamischen Zuweisung von IP-Adressen an Geräte im Netzwerk verwendet?",
                 answers: [
-                    "BOOTP",
-                    "SMTP",
-                    "SNMP",
-                    "NFS"
+                    "BOOTP:Bootstrap Protocol",
+                    "SMTP: Simple Mail Transfer Protocol",
+                    "SNMP: Simple Network Management Protocol",
+                    "NFS: Network File System"
                 ],
-                correct: ["BOOTP"],
+                correct: ["BOOTP:Bootstrap Protocol"],
                 explanation: "BOOTP (Bootstrap Protocol) wird zur Zuweisung von IP-Adressen an Geräte verwendet, insbesondere während des Startvorgangs."
             },
             {
                 question: "13. Welches Protokoll wird für den Zugriff auf Netzwerkdateisysteme genutzt?",
                 answers: [
-                    "NFS",
-                    "FTP",
-                    "SMTP",
-                    "HTTP"
+                    "NFS: Network File System",
+                    "FTP: File Transfer Protocol",
+                    "SMTP: Simple Mail Transfer Protocol",
+                    "HTTP: HyperText Transfer Protocol"
                 ],
-                correct: ["NFS"],
+                correct: ["NFS:Network File System"],
                 explanation: "NFS (Network File System) erlaubt den Zugriff auf Dateien und Verzeichnisse, als ob sie auf dem lokalen Computer gespeichert wären."
             },
             {
                 question: "14. Welches Protokoll ist für die Umwandlung von IP-Adressen in MAC-Adressen zuständig?",
                 answers: [
-                    "RARP",
-                    "ICMP",
-                    "FTP",
-                    "TFTP"
+                    "RARP: Reverse Address Resolution Protocol",
+                    "ICMP: Internet Control Message Protocol",
+                    "FTP: File Transfer Protocol",
+                    "TFTP: Trivial File Transfer Protocol"
                 ],
-                correct: ["RARP"],
+                correct: ["RARP:Reverse Address Resolution Protocol"],
                 explanation: "RARP (Reverse Address Resolution Protocol) wandelt IP-Adressen in physikalische MAC-Adressen um, um Geräte im Netzwerk zu identifizieren."
             },
             {
                 question: "15. Welches Protokoll stellt eine zuverlässige und verbindungsorientierte Datenübertragung bereit?",
                 answers: [
-                    "UDP",
-                    "HTTP",
-                    "TCP",
-                    "DNS"
+                    "UDP:User Datagram Protocol",
+                    "HTTP: HyperText Transfer Protocol",
+                    "TCP: Transmission Control Protocol",
+                    "DNS: Domain Name System"
                 ],
-                correct: ["TCP"],
+                correct: ["TCP:Transmission Control Protocol"],
                 explanation: "TCP (Transmission Control Protocol) bietet eine zuverlässige und verbindungsorientierte Datenübertragung, die sicherstellt, dass Pakete vollständig und in der richtigen Reihenfolge ankommen."
             },
             {
@@ -2049,8 +2016,8 @@ const questionsByCategory =
                 question: "17. Welches Protokoll wird im Token-Ring-Netzwerk verwendet, um die Übertragung zu kontrollieren?",
                 answers: [
                     "Ethernet",
-                    "ICMP",
-                    "SDLC",
+                    "ICMP: Internet Control Message Protocol",
+                    "SDLC: Synchronous Data Link Control",
                     "Token Passing"
                 ],
                 correct: ["Token Passing"],
@@ -2070,23 +2037,23 @@ const questionsByCategory =
             {
                 question: "19. Welches Protokoll wird für Multicast-Übertragungen im Internet verwendet?",
                 answers: [
-                    "IGMP",
-                    "FTP",
-                    "ARP",
-                    "SMTP"
+                    "IGMP:Internet Group Management Protocol",
+                    "FTP File Transfer Protocol",
+                    "ARP:Address Resolution Protocol",
+                    "SMTP:Simple Mail Transfer Protocol"
                 ],
-                correct: ["IGMP"],
+                correct: ["IGMP:Internet Group Management Protocol"],
                 explanation: "IGMP (Internet Group Management Protocol) ermöglicht die Verwaltung von Multicast-Gruppen für die Übertragung an mehrere Empfänger."
             },
             {
                 question: "20. Welches Protokoll wird häufig für die Synchronisation der Zeit über Netzwerke verwendet?",
                 answers: [
-                    "SNMP",
-                    "DNS",
-                    "NTP",
-                    "HTTP"
+                    "SNMP:Simple Network Managment Protocol",
+                    "DNS:Domain Name System",
+                    "NTP:Network Time Protocol",
+                    "HTTP: HypterText Transfer Protocol"
                 ],
-                correct: ["NTP"],
+                correct: ["NTP:Network Time Protocol"],
                 explanation: "NTP (Network Time Protocol) synchronisiert die Uhrzeit zwischen Computern und Netzwerkgeräten, um eine einheitliche Zeitbasis sicherzustellen."
             },
      ],
@@ -3945,6 +3912,490 @@ const questionsByCategory =
         },
 
         ],
+       ITSicherheit:
+        [
+            {
+                question: "1. Warum wird IT-Sicherheit in Unternehmen immer wichtiger?",
+                answers: [
+                    "Durch die zunehmende Vernetzung und steigende Anzahl an Sicherheitslücken.",
+                    "Wegen der niedrigen Anschaffungskosten für Sicherheitssysteme.",
+                    "Weil alle Systeme automatisch sicher sind.",
+                    "Weil die Sicherheitssoftware leicht zu bedienen ist."
+                ],
+                correct: ["Durch die zunehmende Vernetzung und steigende Anzahl an Sicherheitslücken."],
+                explanation: "IT-Sicherheit gewinnt an Bedeutung, da immer mehr Systeme vernetzt sind und Sicherheitslücken Angriffsflächen bieten."
+            },
+            {
+                question: "2. Was versteht man unter Exploits?",
+                answers: [
+                    "Schwachstellen in Software, die von Angreifern ausgenutzt werden können.",
+                    "Eine Methode zur Verbesserung der Netzwerkgeschwindigkeit.",
+                    "Ein neuer Sicherheitstrend.",
+                    "Spezielle Virenscanner zur Abwehr von Angriffen."
+                ],
+                correct: ["Schwachstellen in Software, die von Angreifern ausgenutzt werden können."],
+                explanation: "Exploits sind bekannte Sicherheitslücken in Software, die es Angreifern ermöglichen, Systeme zu kompromittieren."
+            },
+        
+            // Questions on Safety and Security Aspects
+            {
+                question: "3. Was ist unter dem Begriff Verfügbarkeit im Kontext der IT-Sicherheit zu verstehen?",
+                answers: [
+                    "Die Gewährleistung, dass Daten und Systeme jederzeit zugänglich sind.",
+                    "Der Schutz von Daten vor unbefugtem Zugriff.",
+                    "Eine Verschlüsselungstechnik.",
+                    "Eine Strategie zur Erhöhung der Internetgeschwindigkeit."
+                ],
+                correct: ["Die Gewährleistung, dass Daten und Systeme jederzeit zugänglich sind."],
+                explanation: "Verfügbarkeit bedeutet, dass Daten und Systeme jederzeit genutzt werden können, ohne dass es zu Ausfällen kommt.."
+            },
+            {
+                question: "4. Was versteht man unter Vertraulichkeit in der IT-Sicherheit?",
+                answers: [
+                    "Schutz gegen unbefugtes Abhören und Zugriff auf Informationen.",
+                    "Einen hohen Grad an Netzwerkverfügbarkeit.",
+                    "Die Fähigkeit, Netzwerkausfälle zu erkennen.",
+                    "Das Erstellen von Netzwerksicherungen."
+                ],
+                correct: ["Schutz gegen unbefugtes Abhören und Zugriff auf Informationen."],
+                explanation: "Vertraulichkeit bezieht sich auf den Schutz von Informationen vor unautorisiertem Zugriff und Abhören."
+            },
+            {
+                question: "5. Welche Aufgabe hat die Authentifizierung?",
+                answers: [
+                    "Überprüfung der Identität eines Benutzers oder Systems.",
+                    "Schutz vor Datenverlust.",
+                    "Optimierung der Systemleistung.",
+                    "Gewährleistung der Systemverfügbarkeit."
+                ],
+                correct: ["Überprüfung der Identität eines Benutzers oder Systems."],
+                explanation: "Authentifizierung prüft, ob der Kommunikationspartner tatsächlich der ist, der er vorgibt zu sein."
+            },
+        
+            // Questions on Data Backup Concepts
+            {
+                question: "6. Welche Backupmethode erfordert nur das Zurückspielen der letzten Sicherung?",
+                answers: [
+                    "Vollsicherung",
+                    "Inkrementelle Sicherung",
+                    "Differentielle Sicherung",
+                    "Wöchentliche Sicherung"
+                ],
+                correct: ["Vollsicherung"],
+                explanation: "Bei einer Vollsicherung werden alle Daten vollständig gesichert, sodass für die Wiederherstellung nur die letzte Sicherung nötig ist."
+            },
+            {
+                question: "7. Was wird bei einer inkrementellen Sicherung gespeichert?",
+                answers: [
+                    "Nur die seit der letzten Sicherung geänderten oder neuen Dateien.",
+                    "Alle Daten, unabhängig von Änderungen.",
+                    "Nur die Daten, die ein Jahr alt sind.",
+                    "Die komplette Systemkonfiguration."
+                ],
+                correct: ["Nur die seit der letzten Sicherung geänderten oder neuen Dateien."],
+                explanation: "Die inkrementelle Sicherung speichert nur Änderungen seit der letzten Sicherung und ist platzsparender."
+            },
+            {
+                question: "8. Was beschreibt das Generationenprinzip bei der Datensicherung?",
+                answers: [
+                    "Mehrere Generationen von Backups werden aufbewahrt, z.B. Großvater-Vater-Sohn-Prinzip.",
+                    "Nur die neueste Sicherung wird gespeichert.",
+                    "Eine Sicherung, die alle zwei Jahre aktualisiert wird.",
+                    "Ein Sicherungsprozess, der nur einmal durchgeführt wird."
+                ],
+                correct: ["Mehrere Generationen von Backups werden aufbewahrt, z.B. Großvater-Vater-Sohn-Prinzip."],
+                explanation: "Das Generationenprinzip sichert Daten in verschiedenen Abstufungen, um Datenversionen auf verschiedenen Ebenen zu speichern."
+            },
+            
+            // Questions on RAID and Redundancy
+            {
+                question: "9. Wofür wird ein RAID-System verwendet?",
+                answers: [
+                    "Zur Erhöhung der Datensicherheit und -verfügbarkeit durch Redundanz.",
+                    "Zur Sicherung einzelner Dateien.",
+                    "Zur Optimierung der Netzwerkgeschwindigkeit.",
+                    "Zur Verwaltung von Nutzerdaten."
+                ],
+                correct: ["Zur Erhöhung der Datensicherheit und -verfügbarkeit durch Redundanz."],
+                explanation: "RAID-Systeme nutzen redundante Festplattenkonfigurationen, um die Verfügbarkeit und Sicherheit von Daten zu gewährleisten."
+            },
+        
+            // Additional Topics in IT Security and Network Safety
+            {
+                question: "10. Was versteht man unter einer Sicherheitslücke?",
+                answers: [
+                    "Eine Schwachstelle in Systemen oder Anwendungen, die ausgenutzt werden kann.",
+                    "Eine erhöhte Netzwerkkapazität.",
+                    "Ein zusätzlicher Schutzmechanismus.",
+                    "Ein Verfahren zur Optimierung von Datensicherungen."
+                ],
+                correct: ["Eine Schwachstelle in Systemen oder Anwendungen, die ausgenutzt werden kann."],
+                explanation: "Sicherheitslücken entstehen durch unzureichend geschützte Systeme und können von Angreifern ausgenutzt werden."
+            },
+            {
+                question: "11. Welche Backupstrategie sichert täglich geänderte Daten und wöchentlich eine Vollsicherung?",
+                answers: [
+                    "Das Generationenprinzip",
+                    "Die inkrementelle Sicherung",
+                    "Die differentielle Sicherung",
+                    "Die tägliche Vollsicherung"
+                ],
+                correct: ["Die inkrementelle Sicherung"],
+                explanation: "Inkrementelle Sicherungen sichern nur tägliche Änderungen und werden oft in Kombination mit einer wöchentlichen Vollsicherung eingesetzt."
+            },
+            {
+                question: "12. Warum sind strukturelle Datensicherungskonzepte wichtig?",
+                answers: [
+                    "Sie gewährleisten ein standardisiertes und abgestimmtes Vorgehen bei der Datensicherung.",
+                    "Sie reduzieren die Größe des Netzwerks.",
+                    "Sie ermöglichen den Zugang zu gesperrten Dateien.",
+                    "Sie verhindern Hardwaredefekte."
+                ],
+                correct: ["Sie gewährleisten ein standardisiertes und abgestimmtes Vorgehen bei der Datensicherung."],
+                explanation: "Ein strukturiertes Konzept definiert alle Aspekte der Datensicherung, um den Prozess klar und abgestimmt umzusetzen."
+            },
+            {
+                question: "13. Wann sollte eine Notfallübung durchgeführt werden?",
+                answers: [
+                    "Regelmäßig, um die Effizienz der Notfallpläne zu testen.",
+                    "Nur nach einem Vorfall.",
+                    "Nur einmal im Jahr.",
+                    "Immer dann, wenn neue Mitarbeiter eingestellt werden."
+                ],
+                correct: ["Regelmäßig, um die Effizienz der Notfallpläne zu testen."],
+                explanation: "Notfallübungen sollten regelmäßig durchgeführt werden, um die Effektivität der Notfallmaßnahmen sicherzustellen."
+            },
+            {
+                question: "14. Was ist DAS?",
+                answers: [
+                    "Direct Attached Storage, physisch mit einem Server verbunden.",
+                    "Network Attached Storage, mit dediziertem Netzwerk verbunden.",
+                    "Storage Area Network, mit zentraler Speicherverwaltung.",
+                    "Cloud-Speicherlösung, extern gehostet."
+                ],
+                correct: ["Direct Attached Storage, physisch mit einem Server verbunden."],
+                explanation: "DAS (Direct Attached Storage) ist direkt an einen Server angeschlossen und bietet eine einfache, kostengünstige Speicherlösung."
+            },
+            {
+                question: "15. Was ist ein Nachteil von DAS(Direct Attached Storage)?",
+                answers: [
+                    "Wenig Flexibilität bei der Zuweisung.",
+                    "Hohe Kosten für die Implementierung.",
+                    "Komplexe Konfiguration.",
+                    "Erfordert eine Netzwerkverbindung."
+                ],
+                correct: ["Wenig Flexibilität bei der Zuweisung."],
+                explanation: "DAS ist weniger flexibel, da es an einen einzelnen Server gebunden ist und keine einfache Erweiterung ermöglicht."
+            },
+            
+            // Questions on NAS Storage
+            {
+                question: "16. Welche Vorteile bietet NAS?",
+                answers: [
+                    "Zentraler Speicher zu erschwinglichem Preis.",
+                    "Kürzere Zugriffszeiten als bei DAS.",
+                    "Hohe Redundanz und Flexibilität.",
+                    "Komplexe Einrichtung erfordert."
+                ],
+                correct: ["Zentraler Speicher zu erschwinglichem Preis."],
+                explanation: "NAS bietet eine kostengünstige Möglichkeit, zentralen Speicher bereitzustellen, der über das Netzwerk erreichbar ist."
+            },
+            {
+                question: "17. In welchem Fall ist NAS(Storage Area Network) weniger geeignet?",
+                answers: [
+                    "Für Großunternehmen mit hohem Datenverkehr.",
+                    "Für kleine Büros mit geringer Speicherkapazität.",
+                    "Für private Cloud-Lösungen.",
+                    "Für verteilte Backups."
+                ],
+                correct: ["Für Großunternehmen mit hohem Datenverkehr."],
+                explanation: "NAS eignet sich weniger für Großunternehmen mit hohem Datenverkehr, da die Zugriffszeiten bei großem Datenvolumen langsamer sein können."
+            },
+        
+            // Questions on SAN Storage
+            {
+                question: "18. Was ist ein SAN?",
+                answers: [
+                    "Ein Storage Area Network, das hohe Verfügbarkeit und Flexibilität bietet.",
+                    "Ein Direct Attached Storage, das direkt mit dem Server verbunden ist.",
+                    "Eine lokale Festplatte auf dem Server.",
+                    "Eine dedizierte Backup-Lösung."
+                ],
+                correct: ["Ein Storage Area Network, das hohe Verfügbarkeit und Flexibilität bietet."],
+                explanation: "SAN (Storage Area Network) ist ein Netzwerk aus Speichern mit hoher Verfügbarkeit und flexibler Speicherzuweisung."
+            },
+            {
+                question: "19. Welche Implementierungsarten gibt es für SAN (Storage Area Network)?",
+                answers: [
+                    "Fibre Channel und iSCSI(Internet Small Computer System Interface).",
+                    "Direct Connection und Ethernet.",
+                    "NAS:Network Attached Storage und DAS: Direct Attached Storage.",
+                    "Cloud und lokal."
+                ],
+                correct: ["Fibre Channel und iSCSI(Internet Small Computer System Interface)."],
+                explanation: "SAN kann über Fibre Channel oder iSCSI realisiert werden, wodurch es eine flexible und leistungsstarke Lösung darstellt."
+            },
+        
+            // Comparison and Use Cases for Storage Solutions
+            {
+                question: "20. Welches Speichersystem bietet die höchste Flexibilität und Verfügbarkeit?",
+                answers: [
+                    "SAN:Storage Area Network",
+                    "DAS:Direct Attached Storage",
+                    "NAS: Network Attached Storage",
+                    "Cloud-Speicher"
+                ],
+                correct: ["SAN"],
+                explanation: "SAN-Systeme bieten die größte Flexibilität und Verfügbarkeit, da sie speziell für den Unternehmensbedarf ausgelegt sind."
+            },
+            {
+                question: "21. Welche Lösung eignet sich am besten für eine kostengünstige Speichererweiterung in einem kleinen Büro?",
+                answers: [
+                    "NAS",
+                    "SAN",
+                    "DAS",
+                    "Fibre Channel"
+                ],
+                correct: ["NAS"],
+                explanation: "NAS ist die ideale Wahl für kleinere Büros, die eine kostengünstige, zentralisierte Speicherlösung benötigen."
+            },
+        
+            // Questions on Specific Technologies and Protocols
+            {
+                question: "22. Was ist Fibre Channel?",
+                answers: [
+                    "Ein Hochgeschwindigkeitsnetzwerkprotokoll für SAN-Implementierungen.",
+                    "Ein Protokoll für Dateizugriff in NAS-Systemen.",
+                    "Eine Methode zur Cloud-Speicherung.",
+                    "Eine Software zur Speicherverwaltung."
+                ],
+                correct: ["Ein Hochgeschwindigkeitsnetzwerkprotokoll für SAN-Implementierungen."],
+                explanation: "Fibre Channel wird in SAN-Netzwerken verwendet und ermöglicht Hochgeschwindigkeitsdatenübertragung."
+            },
+            {
+                question: "23. Welche Funktion hat iSCSI (Internet Small Computer System Interface)?",
+                answers: [
+                    "Es ermöglicht SAN über TCP/IP-Netzwerke.",
+                    "Es stellt NAS-Ordner bereit.",
+                    "Es ist ein Backup-Protokoll.",
+                    "Es verwaltet NAS-Berechtigungen."
+                ],
+                correct: ["Es ermöglicht SAN über TCP/IP-Netzwerke."],
+                explanation: "iSCSI ist ein Protokoll, das es ermöglicht, SAN-Storage über IP-basierte Netzwerke bereitzustellen, wodurch es flexibler ist."
+            },
+            {
+                question: "24. Was ist der Vorteil von Fibre Channel over Ethernet (FCoE)?",
+                answers: [
+                    "Es vereint die Vorteile von Fibre Channel und Ethernet.",
+                    "Es ist günstiger als iSCSI.",
+                    "Es erfordert keine spezielle Hardware.",
+                    "Es wird nur für kleine Netzwerke verwendet."
+                ],
+                correct: ["Es vereint die Vorteile von Fibre Channel und Ethernet."],
+                explanation: "FCoE integriert Fibre Channel in Ethernet, was eine höhere Effizienz und geringere Infrastrukturkosten ermöglicht."
+            },
+        
+            // Questions on Advanced Storage Concepts
+            {
+                question: "25. Wofür steht MPIO(Multi-Path Input/Output) in Speicherlösungen?",
+                answers: [
+                    "Multipath I/O, ermöglicht mehrere Pfade zu einem Speicherziel.",
+                    "Managed Protocol for Input Output.",
+                    "Main Partition Input Output.",
+                    "Media Partition Input Optimization."
+                ],
+                correct: ["Multipath I/O, ermöglicht mehrere Pfade zu einem Speicherziel."],
+                explanation: "MPIO ermöglicht redundante Verbindungen zu Speichern, was die Zuverlässigkeit und Leistung erhöht."
+            },
+            {
+                question: "26. Welche Rolle spielt iSNS(Internet Storage Name Service) in einem SAN (Storage Attached Network?",
+                answers: [
+                    "Es ermöglicht die Verwaltung und Registrierung von iSCSI-Zielen.",
+                    "Es beschleunigt die Netzwerkgeschwindigkeit.",
+                    "Es verwaltet Fibre Channel Verbindungen.",
+                    "Es sorgt für automatische Backups."
+                ],
+                correct: ["Es ermöglicht die Verwaltung und Registrierung von iSCSI-Zielen."],
+                explanation: "iSNS (Internet Storage Name Service) erleichtert die Verwaltung und das Auffinden von iSCSI-Zielen in einem SAN."
+            },
+        
+            // Additional Topics on Storage Setup in Windows Server
+            {
+                question: "27. Welche Speichertypen werden häufig in Windows Server 2016 konfiguriert?",
+                answers: [
+                    "Freigaben für NAS und SAN.",
+                    "Cloud-Speicher und Backup-Volumes.",
+                    "Interne Festplattenpartitionen.",
+                    "Netzwerkfreigaben und Benutzerprofile."
+                ],
+                correct: ["Freigaben für NAS und SAN."],
+                explanation: "In Windows Server 2016 können Speicherlösungen wie NAS (Network Attached Storage) und SAN (Storage Area Network) über Freigaben und Berechtigungen konfiguriert werden."
+            },
+            {
+                question: "28. Warum sollten Unternehmen IPv6 in Betracht ziehen?",
+                answers: [
+                    "Wegen der bevorstehenden Ausschöpfung des IPv4-Adressraums.",
+                    "Weil IPv6 einfacher zu konfigurieren ist.",
+                    "Da IPv6 keine Sicherheitslücken hat.",
+                    "Weil IPv6 günstiger ist als IPv4."
+                ],
+                correct: ["Wegen der bevorstehenden Ausschöpfung des IPv4-Adressraums."],
+                explanation: "IPv6 ist notwendig, da die Anzahl der IPv4-Adressen begrenzt ist und das Internet stetig wächst."
+            },
+            {
+                question: "29. Worin unterscheidet sich IPv6 von IPv4 in Bezug auf die Adressstruktur?",
+                answers: [
+                    "IPv6-Adressen sind 128-Bit-Adressen.",
+                    "IPv4-Adressen sind 128-Bit-Adressen.",
+                    "IPv6-Adressen sind 32-Bit-Adressen.",
+                    "IPv4-Adressen können in Hexadezimal dargestellt werden."
+                ],
+                correct: ["IPv6-Adressen sind 128-Bit-Adressen."],
+                explanation: "IPv6-Adressen bestehen aus 128 Bit, wodurch eine größere Anzahl an Adressen möglich ist als bei IPv4."
+            },
+            {
+                question: "30. Was sind die Hauptadressentypen in IPv6?",
+                answers: [
+                    "Unicast, Multicast, und Anycast",
+                    "Broadcast, Multicast und Anycast",
+                    "Unicast und Broadcast",
+                    "Nur Multicast und Unicast"
+                ],
+                correct: ["Unicast, Multicast, und Anycast"],
+                explanation: "IPv6 verwendet Unicast für individuelle Kommunikation, Multicast für Gruppenkommunikation und Anycast für die nächstgelegene Adresse."
+            },
+        
+            // Questions on IPv6 Autoconfiguration and Tools
+            {
+                question: "31. Welche Autokonfigurationsmethoden unterstützt IPv6?",
+                answers: [
+                    "SLAAC (Stateless Address Autoconfiguration) und DHCPv6",
+                    "Nur DHCPv6",
+                    "Nur statische Adressvergabe",
+                    "IPSec und DHCP"
+                ],
+                correct: ["SLAAC und DHCPv6"],
+                explanation: "IPv6 unterstützt die automatische Konfiguration über SLAAC und DHCPv6 für Netzwerke ohne manuelle Konfiguration."
+            },
+            {
+                question: "32. Welche Werkzeuge können zur IPv6-Konfiguration verwendet werden?",
+                answers: [
+                    "Netsh, Windows PowerShell Cmdlets, und TCP/IPv6-Eigenschaften",
+                    "Nur Windows PowerShell",
+                    "Nur Netsh",
+                    "Nur manuelle Adressierung"
+                ],
+                correct: ["Netsh, Windows PowerShell Cmdlets, und TCP/IPv6-Eigenschaften"],
+                explanation: "IPv6 lässt sich mithilfe von Netsh, PowerShell und den Eigenschaften der TCP/IPv6-Komponente konfigurieren."
+            },
+        
+            // Questions on IPv6 and IPv4 Coexistence
+            {
+                question: "33. Was ist eine duale IP-Layer-Architektur?",
+                answers: [
+                    "Eine Architektur, die IPv4 und IPv6 im selben Protokollstapel unterstützt.",
+                    "Ein Netzwerkprotokoll nur für IPv6.",
+                    "Eine Architektur, die IPv6 ausschließt.",
+                    "Eine Architektur, die ausschließlich IPv4 verwendet."
+                ],
+                correct: ["Eine Architektur, die IPv4 und IPv6 im selben Protokollstapel unterstützt."],
+                explanation: "Die duale IP-Layer-Architektur ermöglicht die gleichzeitige Nutzung von IPv4 und IPv6 im selben Netzwerk."
+            },
+            {
+                question: "34. Welche DNS-Einträge werden für die IPv4- und IPv6-Koexistenz benötigt?",
+                answers: [
+                    "A-, AAAA- und PTR-Einträge",
+                    "Nur A- und PTR-Einträge",
+                    "Nur PTR- und MX-Einträge",
+                    "Nur AAAA- und CNAME-Einträge"
+                ],
+                correct: ["A-, AAAA- und PTR-Einträge"],
+                explanation: "Für die IPv4- und IPv6-Koexistenz sind A-Einträge für IPv4, AAAA-Einträge für IPv6 und PTR-Einträge für die Reverse Lookup erforderlich."
+            },
+        
+            // Questions on IPv6 Transition Technologies
+            {
+                question: "35. Was ist ISATAP(Intra-Site Automatic Tunnel Addressing Protocol)?",
+                answers: [
+                    "Eine Technik, die IPv6-Kommunikation über ein IPv4-Intranet ermöglicht.",
+                    "Ein VPN-Protokoll.",
+                    "Eine Datenverschlüsselungstechnik.",
+                    "Ein DNS-Weiterleitungsprotokoll."
+                ],
+                correct: ["Eine Technik, die IPv6-Kommunikation über ein IPv4-Intranet ermöglicht."],
+                explanation: "ISATAP(Intra-Site Automatic Tunnel Addressing Protocol) ermöglicht die Nutzung von IPv6 über ein IPv4-Intranet, indem IPv4-Adressen in IPv6-Adressen eingebettet werden."
+            },
+            {
+                question: "36. Wofür steht Teredo?",
+                answers: [
+                    "Ein Protokoll zur Ermöglichung von IPv6-Konnektivität über IPv4 und NAT.",
+                    "Ein Verschlüsselungsalgorithmus.",
+                    "Eine Backup-Strategie.",
+                    "Ein IP-Verwaltungsprotokoll."
+                ],
+                correct: ["Ein Protokoll zur Ermöglichung von IPv6-Konnektivität über IPv4 und NAT."],
+                explanation: "Teredo ermöglicht die Verbindung von IPv6-Hosts über IPv4-Netzwerke, einschließlich NAT."
+            },
+            {
+                question: "37. Was ist 6 to 4?",
+                answers: [
+                    "Ein Tunneling-Protokoll, das IPv6-Verkehr über das IPv4-Internet sendet.",
+                    "Ein IPv4-zu-IPv6-Konverter.",
+                    "Ein Routerprotokoll.",
+                    "Ein Firewallschutz."
+                ],
+                correct: ["Ein Tunneling-Protokoll, das IPv6-Verkehr über das IPv4-Internet sendet."],
+                explanation: "6to4 ist ein Tunneling-Protokoll, das IPv6-Daten über ein IPv4-Netzwerk transportiert, indem es IPv4-Adressinformationen in die IPv6-Adresse integriert."
+            },
+        
+            // Advanced Configuration and Transition Options
+            {
+                question: "38. Was macht PortProxy?",
+                answers: [
+                    "Es stellt Zugriff von IPv6-Hosts auf IPv4-Anwendungen bereit.",
+                    "Es verschlüsselt IPv6-Datenverkehr.",
+                    "Es optimiert DNS-Anfragen.",
+                    "Es konvertiert IPv6-Adressen in IPv4-Adressen."
+                ],
+                correct: ["Es stellt Zugriff von IPv6-Hosts auf IPv4-Anwendungen bereit."],
+                explanation: "PortProxy ermöglicht IPv6-Hosts den Zugriff auf IPv4-Anwendungen und stellt so eine Verbindung zwischen den beiden Protokollen her."
+            },
+            {
+                question: "39. Was ist der Unterschied zwischen ISATAP und Teredo?",
+                answers: [
+                    "ISATAP ist für IPv4-Intranets, Teredo für NAT-Umgebungen.",
+                    "ISATAP ist schneller als Teredo.",
+                    "Teredo ist nur für öffentliche Netzwerke.",
+                    "ISATAP verschlüsselt den Datenverkehr, Teredo nicht."
+                ],
+                correct: ["ISATAP ist für IPv4-Intranets, Teredo für NAT-Umgebungen."],
+                explanation: "ISATAP ermöglicht IPv6-Kommunikation über IPv4-Intranets, während Teredo speziell für die Kommunikation über NAT geeignet ist."
+            },
+        
+            // Planning and Implementing Native IPv6 Environments
+            {
+                question: "40. Was sollte bei der Planung einer nativen IPv6-Umgebung berücksichtigt werden?",
+                answers: [
+                    "Unterstützung durch Betriebssysteme, Router, Netzwerkgeräte und Anwendungen.",
+                    "Ausschließlich die Routerkonfiguration.",
+                    "Nur die DNS-Server-Einstellungen.",
+                    "Nur die IPv4-Unterstützung der Netzwerkgeräte."
+                ],
+                correct: ["Unterstützung durch Betriebssysteme, Router, Netzwerkgeräte und Anwendungen."],
+                explanation: "Eine native IPv6-Umgebung erfordert, dass alle Komponenten im Netzwerk IPv6 unterstützen, einschließlich Betriebssysteme und Geräte."
+            },
+            {
+                question: "41. Welche Netzwerkelemente müssen für den Übergang auf IPv6 aktualisiert werden?",
+                answers: [
+                    "DNS-Einträge, Routinginfrastruktur und Hosts.",
+                    "Nur die Hosts.",
+                    "Nur die Router.",
+                    "Nur die Server."
+                ],
+                correct: ["DNS-Einträge, Routinginfrastruktur und Hosts."],
+                explanation: "Für einen vollständigen IPv6-Übergang müssen alle relevanten Komponenten, einschließlich DNS, Router und Hosts, IPv6-fähig sein."
+            }
+        ],
 
 };
 // Quiz logic and functions
@@ -3980,7 +4431,8 @@ document.getElementById('start-btn').addEventListener('click', () => {
             ...questionsByCategory["numberSystem"],
             ...questionsByCategory["SwitchingAlgebra"],
             ...questionsByCategory["Protocol"],
-            ...questionsByCategory["IPADD"]
+            ...questionsByCategory["IPADD"],
+            ...questionsByCategory["ITSicherheit"]
         ]);
     } else {
         questions = shuffle([...questionsByCategory[selectedCategory]]);
